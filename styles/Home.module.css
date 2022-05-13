@@ -1,0 +1,35 @@
+.container {
+    padding: 0;
+    width: 100%;
+    padding: 0;
+}
+
+.header {
+    margin-top: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+}
+
+.header h1 {
+    font-weight: bolder;
+    font-size: 87px;
+    color: skyblue;
+    width: auto;
+    margin-top: 29px;
+    margin-right: 54%;
+}
+
+
+
+
+
+
+
+/* @media (max-width: 600px) {
+    .grid {
+        width: 100%;
+        flex-direction: column;
+    }
+} */
