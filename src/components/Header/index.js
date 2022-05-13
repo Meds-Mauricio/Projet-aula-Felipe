@@ -5,9 +5,9 @@ import { BsCart4 } from 'react-icons/bs'
 export default function Header() {
     return (
         <section className={style.header}>
-            {/* <div className={style.headerForm}> */}
-            <h1>Na Moda</h1>
-            {/* </div> */}
+            <div className={style.headerForm}>
+                <h1>Na Moda</h1>
+            </div>
             <nav className={style.navHome}>
                 <ul className={style.linkPrincipal}>
                     <a href='/'>Home</a>
@@ -18,7 +18,7 @@ export default function Header() {
                 </ul>
             </nav>
             <div className={style.carrinho}>
-                <BsCart4 />
+                <BsCart4 className={style.BsCart4} />
             </div>
         </section>
 

@@ -1,47 +1,31 @@
-
 .header {
-    margin-top: 5px;
     display: flex;
-    flex-direction: row;
     justify-content: center;
+    flex-direction: column;
+    align-items: center;
     width: 100%;
-    background-color: rgb(255, 192, 231);
+    margin: 0 auto;
+    background-image: linear-gradient(to right, #f83600 0%, #f9d423 100%);
+    position: relative;
 }
 
-.header h1 {
-    font-weight: bolder;
+.headerForm {
+    text-align: center;
     font-size: 87px;
     color: skyblue;
-    width: auto;
-    margin-top: 29px;
-    margin-right: 54%;
-}
-/* 
-.headerForm h1 {
-    display: flex;
-    align-items: center;
-} */
-/* 
-.headerForm {
-    display: flex;
-    flex-direction: row;
-    width: 64%;
-    justify-content: space-around;
-    align-items: center;
-    margin-left: auto;
-} */
-.navHome {
-    z-index: 1;
+    margin-top: -40px;
 }
 
 .linkPrincipal {
     display: flex;
     justify-content: space-between;
-    width: 50%;
+    width: 49vw;
     margin: 0 auto;
     text-decoration: none;
     font-style: oblique;
     font-weight: bolder;
+    margin-top: -40px;
+    margin-right: 20px;
 }
 
 .linkPrincipal a {
@@ -49,20 +33,17 @@
     font-style: oblique;
     font-weight: bolder;
     text-decoration: none;
-    z-index: 1;
+    font-size: 22px;
 }
 
 .carrinho {
-    display: flex;
-    justify-content: flex-end;
-    z-index: 0;
-    margin-right: 199px;
-    margin-top: -19px;
-    height: 50px;
+    right: 19px;
+    margin-top: 240px;
+    position: absolute;
 }
 
 .BsCart4 {
-    width: 74px;
-    height: 10px;
+    width: 54px;
+    height: 40px;
+    color: aliceblue;
 }
-
