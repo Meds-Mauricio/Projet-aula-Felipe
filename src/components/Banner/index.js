@@ -1,10 +1,10 @@
 import style from './styles.module.css'
 import React from 'react'
 
-export default function Banner({ banners }) {
+export default function Banner({ src }) {
     return (
-        <div>
-            <img src={banners} alt="" className={style.imgBanners} />
-        </div>
+        <section>
+            <img src={src} alt="" className={style.imgBanners} />
+        </section>
     )
 }

@@ -1,7 +1,6 @@
 import React from 'react'
 import style from './styles.module.css'
-import { BsCart4 } from 'react-icons/bs'
-
+// import { texto, imagemBanner} from './SectionBanners/Banner'
 export default function Header() {
     return (
         <section className={style.header}>
@@ -17,9 +16,6 @@ export default function Header() {
                     <a href='/contato'>Contatos</a>
                 </ul>
             </nav>
-            <div className={style.carrinho}>
-                <BsCart4 className={style.BsCart4} />
-            </div>
         </section>
 
     )

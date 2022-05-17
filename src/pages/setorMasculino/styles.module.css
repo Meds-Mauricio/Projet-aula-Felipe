@@ -1,5 +1,6 @@
 .main {
+    height: 100vh;
     font-style: oblique;
     text-align: center;
-    color: rgb(255, 149, 10);
+    color: rgb(255, 18, 10);
 }

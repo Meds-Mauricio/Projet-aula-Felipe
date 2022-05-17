@@ -1,9 +1,18 @@
-.content {
+.container {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between; 
-    max-width: 1440px;
-    width: 100%;
-    padding: 0 2rem;
+    justify-content: center;
 }
- 
+
+.settings {
+    display: flex;
+}
+
+.container .imgBanner {
+    width: 100%;
+    margin-right: 2px;
+}
+
+.activeDotStyle {
+    background-color: #009cff;
+    width: 30;
+}

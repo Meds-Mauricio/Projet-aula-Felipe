@@ -1,7 +1,11 @@
-.imgBanners {
-    width: 100%;
+.section {
+    width: 1440px;
+    height: auto;
+}
+
+ .imgBanners {
+    width: 1440px;
     height: 537px;
-    margin-left: 0 300px;
 }
 
 
