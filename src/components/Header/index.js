@@ -1,6 +1,6 @@
 import React from 'react'
 import style from './styles.module.css'
-// import { texto, imagemBanner} from './SectionBanners/Banner'
+
 export default function Header() {
     return (
         <section className={style.header}>

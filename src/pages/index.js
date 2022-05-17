@@ -1,10 +1,9 @@
 import Head from 'next/head'
 import styles from '../../styles/Home.module.css'
+import Banner from '../components/Banner'
 import Footer from '../components/Footer'
 import Header from '../components/Header'
-import SectionBanners from '../components/Banner'
-import Card from '../components/Card'
-import {texto, imagemBanner}  from '../components/SectionBanners/Banner/index.js';
+import SectionBanners from '../components/SectionBanners/Banner'
 
 export default function Home() {
 
@@ -20,11 +19,9 @@ export default function Home() {
             </header>
             <SectionBanners />
             <section className={styles.content}>
-                <texto />
-                <imagemBanner />
-                {/* <Card imagem="https://img.lojasrenner.com.br/item/600580416/large/1.jpg" />
-                <Card imagem="https://i.ytimg.com/vi/0ZV9MDwHjVE/maxresdefault.jpg" />
-                <Card imagem="https://blog.passarela.com.br/wp-content/uploads/2018/09/capamodainfantil.jpg" /> */}
+                <img Banner src="https://img.lojasrenner.com.br/item/600580416/large/1.jpg" />,
+                <Banner src="https://i.ytimg.com/vi/0ZV9MDwHjVE/maxresdefault.jpg" />,
+                <Banner src="https://blog.passarela.com.br/wp-content/uploads/2018/09/capamodainfantil.jpg" />,
             </section>
             <Footer />
         </>
