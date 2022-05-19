@@ -19,9 +19,9 @@ export default function Home() {
             </header>
             <SectionBanners />
             <section className={styles.content}>
-                <img Banner src="https://img.lojasrenner.com.br/item/600580416/large/1.jpg" />,
-                <Banner src="https://i.ytimg.com/vi/0ZV9MDwHjVE/maxresdefault.jpg" />,
-                <Banner src="https://blog.passarela.com.br/wp-content/uploads/2018/09/capamodainfantil.jpg" />,
+                <img src="https://img.lojasrenner.com.br/item/600580416/large/1.jpg" />,
+                <img src="https://i.ytimg.com/vi/0ZV9MDwHjVE/maxresdefault.jpg" />,
+                <img src="https://blog.passarela.com.br/wp-content/uploads/2018/09/capamodainfantil.jpg" />,
             </section>
             <Footer />
         </>
