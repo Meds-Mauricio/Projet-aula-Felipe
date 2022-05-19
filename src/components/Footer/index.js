@@ -4,6 +4,7 @@ import { BsWhatsapp } from 'react-icons/Bs/';
 import { AiOutlineFacebook } from 'react-icons/ai';
 
 export default function Footer() {
+    
     return (
         <section>
             <div className={style.rodape} >
