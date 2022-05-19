@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import styles from '../../styles/Home.module.css'
-import Banner from '../components/Banner'
+// import Banner from './components/Banner'
 import Footer from '../components/Footer'
 import Header from '../components/Header'
 import SectionBanners from '../components/SectionBanners/Banner'
@@ -18,11 +18,6 @@ export default function Home() {
                 <Header />
             </header>
             <SectionBanners />
-            <section className={styles.content}>
-                <img src="https://img.lojasrenner.com.br/item/600580416/large/1.jpg" />,
-                <img src="https://i.ytimg.com/vi/0ZV9MDwHjVE/maxresdefault.jpg" />,
-                <img src="https://blog.passarela.com.br/wp-content/uploads/2018/09/capamodainfantil.jpg" />,
-            </section>
             <Footer />
         </>
 

@@ -1,18 +1,14 @@
 .container {
-    display: flex;
-    justify-content: center;
-}
-
-.settings {
-    display: flex;
-}
-
-.container .imgBanner {
+    min-width: max-content;
     width: 100%;
-    margin-right: 2px;
 }
 
-.activeDotStyle {
-    background-color: #009cff;
-    width: 30;
+.conainer .selected {
+    width: min-content;
+    width: 1440px;
+}
+
+ .banner {
+    width: 1440px;
+    height: 537px;
 }

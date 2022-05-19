@@ -1,0 +1,11 @@
+.section {
+    width: 100%;
+    height: 250px;
+    
+}
+
+.rodape {
+    display: flex;
+    padding: 1px 100px;
+    background-image: linear-gradient(to right, #f83600 0%, #f9d423 100%);
+}
