@@ -2,7 +2,8 @@ import Head from 'next/head'
 import Image from 'next/image'
 import styles from './styles.module.css'
 import Header from '../../components/Header'
-import SectionsCards from '../../components/Sections/Cards'
+import SectionsCards from '../../components/SectionBanners/Sections/Cards'
+import Footer from '../../components/Footer'
 
 export default function Infantil() {
 
@@ -36,10 +37,11 @@ export default function Infantil() {
                 <h1>Moda Infantil</h1>
                 <SectionsCards />
 
-                {Infantil.masculina(roupas => 
-       <Card imagem={roupas.BlusaDeFrio} />
-       )}
+                {/* {Infantil.Setor.Masculina(roupas =>
+                    <Card imagem={roupas.BlusaDeFrio} />
+                )} */}
             </main>
+            <Footer />
         </>
     )
 }

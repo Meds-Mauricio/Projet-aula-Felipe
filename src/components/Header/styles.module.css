@@ -1,18 +1,17 @@
 .header {
     display: flex;
-    justify-content: center;
+    /* justify-content: center;
     flex-direction: column;
-    align-items: center;
+    align-items: center; */
     width: 100%;
-    margin: 0 auto;
-    background-image: linear-gradient(to right, #f83600 0%, #f9d423 100%);
-    position: relative;
+    background-color: #222; 
+    /* position: relative; */
 }
 
 .headerForm {
     text-align: center;
     font-size: 87px;
-    color: skyblue;
+    color: #FFFAFA;
     margin-top: -40px;
 }
 
@@ -29,9 +28,16 @@
 }
 
 .linkPrincipal a {
-    color: aliceblue;
+    color: #FFFAFA;
     font-style: oblique;
     font-weight: bolder;
     text-decoration: none;
     font-size: 22px;
+}
+
+.container {
+    width: 1440px;
+   margin: 0 auto;
+   padding: 30px 0 40px 0;
+
 }

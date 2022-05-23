@@ -1,6 +1,7 @@
 import style from './styles.module.css'
 
 import React from 'react'
+import Footer from '../Footer'
 
 export default function Formulario() {
     return (
@@ -24,4 +25,5 @@ export default function Formulario() {
                 <button class={style.submit} href="#" imput type="submit" value='enviar'>Enviar</button>
             </form>
         </section>)
+        
 }

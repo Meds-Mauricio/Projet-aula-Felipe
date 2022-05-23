@@ -3,3 +3,7 @@
     text-align: center;
     font-style: oblique;
 }
+ .section {
+     margin-top: 100px;
+     width: 100%;
+ }
