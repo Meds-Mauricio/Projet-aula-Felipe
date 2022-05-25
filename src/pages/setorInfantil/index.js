@@ -2,18 +2,17 @@ import Head from 'next/head'
 import Image from 'next/image'
 import styles from './styles.module.css'
 import Header from '../../components/Header'
-import SectionsCards from '../../components/SectionBanners/Sections/Cards'
 import Footer from '../../components/Footer'
+// import Card from '../../components/Card'
 
-export default function Infantil() {
+export default function SetorInfantil() {
 
-    const Infantil = {
+    const roupasInfantis = {
         masculina: {
             BlusaDeFrio: "https://www.bebevestebem.com.br/image/cache/data/04073-blusa-frio-cinza-chicco-926x926.jpg",
             conjuntoMoleton: "https://d1el7pgrd75iy6.cloudfront.net/Custom/Content/Products/10/04/1004434_conj-moleton-c-cap-aberto-m-inf-4-10-94-09-7_m3_637202289674715280.jpg",
             calças: "https://a-static.mlcdn.com.br/618x463/kit-calca-jeans-infantil-masculino-skinny-com-cinto-mundo-principe/mundoprincipekids2/706606022/9f794097d4b18275a34c022fe841efc1.jpg",
             bermudas: "https://static.cdnlive.com.br/uploads/603/unidade/15675233966892_zoom.jpg",
-            camisas: "https://i.pinimg.com/236x/ce/1a/4c/ce1a4c5c1093ebb2dbf4196a90fdec54.jpg",
         },
 
         feminina: {
@@ -35,11 +34,11 @@ export default function Infantil() {
 
             <main className={styles.main}>
                 <h1>Moda Infantil</h1>
-                <SectionsCards />
+                {/* <Card /> */}
 
-                {/* {Infantil.Setor.Masculina(roupas =>
-                    <Card imagem={roupas.BlusaDeFrio} />
-                )} */}
+                {/* { Infantil.SetorMasculina(roupas =>
+                    <Card imagem={roupas.BlusaDeFrio } /> */}
+                
             </main>
             <Footer />
         </>

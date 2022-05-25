@@ -1,6 +1,17 @@
-.main {
-    height: 100vh;
-    font-style: oblique;
-    text-align: center;
-    color: rgb(255, 18, 10);
+.container {
+    width: 100%;
+    margin: 10px auto;
+
+}
+
+.container .imagem {
+    display: flex;
+width: 1440px;
+}
+
+.container img {
+    display: flex;
+    width: 268px;
+    height: 312px;
+    
 }

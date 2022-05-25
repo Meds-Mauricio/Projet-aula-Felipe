@@ -9,6 +9,21 @@
 }
 
 
+.container {
+    min-width: max-content;
+    width: 100%;
+}
+
+.conainer .selected {
+    width: min-content;
+    width: 1440px;
+}
+
+ .banner {
+    width: 100%;
+}
+
+
 
 
 

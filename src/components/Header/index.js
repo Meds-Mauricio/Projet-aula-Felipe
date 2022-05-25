@@ -5,7 +5,6 @@ export default function Header() {
     return (
         <section className={style.header}>
             <div className={style.container}>
-                {/* <h1>Na Moda</h1> */}
                 <img src='./logo_namoda.png'/>
             
             <nav className={style.navHome}>
