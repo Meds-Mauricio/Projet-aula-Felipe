@@ -3,8 +3,9 @@ import Image from 'next/image'
 import Header from '../../components/Header'
 import styles from './styles.module.css'
 import Footer from '../../components/Footer'
-import sectionCards from '../sectionCards/Card'
 import Card from '../../components/Card'
+// import sectionCards from '../sectionCards/Card'
+
 
 export default function setorMasculino() {
 
@@ -23,7 +24,11 @@ export default function setorMasculino() {
 
                     <main className={styles.main}>
                         <h1>Moda Masculina</h1>
-                        <Card />
+                        <p>
+                            <Card thumbnail img src="https://29664.cdn.simplo7.net/static/29664/sku/atacado-2a-linha-moda-masculina-2a-calcas-e-camisas-masculinas-100-pecas-de-segunda-linha--p-1542372289203.jpg"
+                            titulo="bermudas"
+                             valor="R$ 40,00" />
+                        </p>
                     </main>
                     <Footer />
 
