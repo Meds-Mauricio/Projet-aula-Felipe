@@ -2,22 +2,27 @@ import React from 'react'
 import style from './styles.module.css'
 import sectionCards from "../Card";
 
-export default function Card(props) {
+export default function Card({ thumbnail, title, price,  }) {
     return (
         <>
-            <main className={style.container}>
-                <section className={style.grid}>
-                    {/* <Card */}
-                    <p>thumbnail:{props.thumbnail}</p>
-                    <p>titulo:{props.titulo}</p>
-                    <p>valor:{props.valor}</p>
-                    {/* <Card
-                        thumbnail="https://i.pinimg.com/236x/9c/23/1c/9c231cb67442f0a1f86c06b939781002.jpg"
-                        titulo="Roupa Social"
-                        valor="R$ 180,00"
-                    />
+            <section className={style.container}>
+                <div className={style.thumbnail}>
+                    <img src={thumbnail} />
+                </div>
+                <div className={style.infocontent}>
+                    <span className={style.title}>{title}</span> 
+                    <span className={style.price}>{price}</span>                   
+                </div>
+        </section>
+                {/* <section className={style.grid}> */}
+                {/* <div className={style.card}>
+                        <p>thumbnail:{props.thumbnail}</p>
+                        <p>titulo:{props.titulo}</p>
+                        <p>valor:{props.valor}</p>
+                    </div>
+                  
                     <Card
-                        thumbnail="https://images-americanas.b2w.io/produtos/3102307601/imagens/mais-grossa-de-veludo-com-capuz-imprimir-suit-longo-juventude-luva-sports-men-sweater-f/3102307652_1_xlarge.jpg"
+                        thumbnail=""
                         titulo="bermudas"
                         valor="R$ 50,00"
                     />
@@ -26,16 +31,8 @@ export default function Card(props) {
                         titulo="calças"
                         valor="R$ 110,00"
                     />
-                    <Card
-                        thumbnail="https://img.lojasrenner.com.br/item/600580416/large/1.jpg"
-                        titulo="blusas"
-                        valor="R$ 80,00"
-                    />
-                    <Card
-                        thumbnail="https://www.barony.com.br/10403-large_default/camisas-masculinas-manga-comprida-com-estampas-de-retalhos-e-listras.jpg"
-                        titulo="camisas"
-                        valor="R$ 80,00"
-                    /> */}
+                    
+                    
                 </section>
 
                 {/* <section className='card2'>
@@ -104,7 +101,6 @@ export default function Card(props) {
                     />
 
                 </section> */}
-            </main>
         </>
     )
 }

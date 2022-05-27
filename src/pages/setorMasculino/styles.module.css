@@ -4,14 +4,55 @@
 
 }
 
-.container .imagem {
-    display: flex;
-width: 1440px;
+.main h1 {
+    text-align: center;
+    color: #222;
+    font-style: oblique;
+    font-weight: 800;
+    text-decoration: none;
+    font-size: 34px;
 }
 
 .container img {
     display: flex;
     width: 268px;
-    height: 312px;
+    height: 250px;
     
 }
+
+.card {
+    display: flex;
+    flex-direction: column;
+    margin-top: 70px;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.grid {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 3px;   
+}
+
+.card2 {
+    display: flex;
+    justify-content: space-around;
+}
+
+.span {
+    font-size: 18px;
+} 
+
+.grid .span:last-child(1) {
+    color: #7b7b7b;
+    margin-top: 0.5rem;
+    font-size: 14px;
+}
+
+/* .img {
+width: 346px;
+height: 374px;
+padding: 0.5rem;
+}  */
+

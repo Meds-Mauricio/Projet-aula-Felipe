@@ -2,7 +2,6 @@ import Head from 'next/head'
 import Image from 'next/image'
 import Footer from '../../components/Footer'
 import Formulario from '../../components/Formulario'
-import Header from '../../components/Header'
 import styles from './styles.module.css'
 
 export default function Cadastro() {
@@ -14,12 +13,10 @@ export default function Cadastro() {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
 
-            <Header />
             <main className={styles.main}>
                 <h1>Formulário</h1>
                 <Formulario />
             </main>
-            <Footer />
         </section>
     )
 }

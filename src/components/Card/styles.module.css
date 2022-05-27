@@ -3,23 +3,25 @@
     background-color: #ffffff;
     border-radius: 0.3rem;
     box-shadow: rgb(0 0 0 / 20%) 0px 2px 6px; 
-    width: 232px;
-    height: 100%;
+    width: 390px;
+    height: 390px;
 }
 
-.thumbnail, .cards2 {
+.thumbnail {
     display: flex;
     width: 100%;
-    height: 53%;    
+    height: 55%;    
     justify-content: center;
 }
 
-.infoContent, .cards2 {
+.infoContent{
     display: flex;
     flex-direction: column;
     padding:1rem ;    
     padding-bottom: 10rem;
 }
+
+
 
     /* span {
         font-size: 18px;
