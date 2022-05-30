@@ -6,14 +6,6 @@ import Card from '../../components/Card'
 
 export default function setorFeminina() {
 
-//     const roupasFeminina = {
-//         BlusaDeFrio: "",
-//         shorts: "",
-//         calças: "https://29664.cdn.simplo7.net/static/29664/sku/atacado-2a-linha-moda-masculina-2a-calcas-e-camisas-masculinas-100-pecas-de-segunda-linha--p-1542372289203.jpg",
-//         conjuntinhos: "",
-//         camisas: "",
-//         blusinhas: "",
-//    }
     return (
         <>
             <Head>
@@ -25,10 +17,10 @@ export default function setorFeminina() {
                 <h1>Moda Feminina</h1>
                 {/* {femininas.map(item => 
        <Card imagem={item.blusinhas} /> */}
-       {/* )} */}
-       <sectionCards />
-       
+                {/* )} */}
             </main>
         </>
+
     )
+
 }

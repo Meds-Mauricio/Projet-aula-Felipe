@@ -14,33 +14,27 @@
     justify-content: center;
 }
 
-.infoContent{
+.title{
     display: flex;
     flex-direction: column;
-    padding:1rem ;    
-    padding-bottom: 10rem;
+    padding: 1rem;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    margin-top: 38px;
+    text-align: center;
 }
 
-
-
-    /* span {
-        font-size: 18px;
-    } */
-
-    /* span:last-child {
-        color: #7b7b7b;
-        margin-top: 0.5rem;
-        font-size: 14px;
-    } */
-
-/* .content img{
-    width: 450px;   
+.price{
+    display: flex;
+    flex-direction: column;
+    /* padding: 1rem; */
+    font-size: 1.5rem;
+    font-weight: bolder;
+    text-align: center;
 }
 
-.img {
-    width: 346px;
-    height: 374px;
-    padding: 0.5rem;
-} */
-
-
+ .grid span {
+    font-size: 18px;
+    margin-left: 10px;
+    text-align: end;
+}  

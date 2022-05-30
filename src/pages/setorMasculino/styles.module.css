@@ -20,39 +20,19 @@
     
 }
 
-.card {
-    display: flex;
-    flex-direction: column;
-    margin-top: 70px;
-    width: 100%;
-    flex-wrap: wrap;
-    justify-content: center;
+.grid { 
+     
+    
+    margin-top: 46px;
 }
 
-.grid {
+.card {
     display: flex;
     justify-content: space-around;
-    margin-bottom: 3px;   
+       
 }
 
 .card2 {
     display: flex;
     justify-content: space-around;
 }
-
-.span {
-    font-size: 18px;
-} 
-
-.grid .span:last-child(1) {
-    color: #7b7b7b;
-    margin-top: 0.5rem;
-    font-size: 14px;
-}
-
-/* .img {
-width: 346px;
-height: 374px;
-padding: 0.5rem;
-}  */
-

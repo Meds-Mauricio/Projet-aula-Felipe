@@ -20,12 +20,13 @@ export default function setorMasculino() {
 
                     <main className={styles.main}>
                         <h1>Moda Masculina</h1>
-                        <section className={styles.card}>
-                            <section className={styles.grid}>
+                        <section className={styles.grid}>
+                            <section className={styles.card}>
                                 <Card
                                     thumbnail="https://imgcentauro-a.akamaihd.net/900x900/94982202/bermuda-nike-monster-mesh-5-0-masculina-img.jpg"
-                                    title="Roupa Social"
+                                    title="Bermuda"
                                     price="R$ 180,00"
+
                                 />
                                 <Card
                                     thumbnail="https://images-americanas.b2w.io/produtos/3102307601/imagens/mais-grossa-de-veludo-com-capuz-imprimir-suit-longo-juventude-luva-sports-men-sweater-f/3102307652_1_xlarge.jpg"
@@ -36,11 +37,13 @@ export default function setorMasculino() {
                                     thumbnail="https://cf.shopee.com.br/file/2b36a76a146ed36b1369185b56138eb0"
                                     title="Calça Jeans"
                                     price="R$ 40,00"
+                                    
                                 />
                             </section>
 
-                            <section className={styles.card2}>
-                                <Card thumbnail="https://i.pinimg.com/originals/cc/02/23/cc0223936ab671be4f4144a31a155df7.jpg"
+                            {/* <section className={styles.card2}>
+                                <Card
+                                    thumbnail="https://i.pinimg.com/originals/cc/02/23/cc0223936ab671be4f4144a31a155df7.jpg"
                                     title="Roupa Social"
                                     price="R$ 220,00"
                                 />
@@ -54,7 +57,7 @@ export default function setorMasculino() {
                                     title="Blusa"
                                     price="R$ 80,00"
                                 />
-                            </section>
+                            </section> */}
                         </section>
                     </main>
                 </div>
