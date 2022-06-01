@@ -2,7 +2,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import styles from './styles.module.css'
 import Footer from '../../components/Footer'
-// import Card from '../sectionCards/Cards'
+// import Card from '../../components/Card'
 
 export default function SetorInfantil() {
 
@@ -32,7 +32,7 @@ export default function SetorInfantil() {
 
             <main className={styles.main}>
                 <h1>Moda Infantil</h1>
-                <Card />
+                {/* <Card /> */}
 
                 {/* { Infantil.SetorMasculina(roupas =>
                     <Card imagem={roupas.BlusaDeFrio } /> */}

@@ -1,6 +1,19 @@
 .main {
     height: 100vh;
-    font-style: oblique;
+    color: #222;
     text-align: center;
-    color: rgb(255, 18, 10);
+    font-style: oblique;
+    /* text-decoration: none; */
+    font-weight: 800;
+    font-size: 34px;
+}
+
+
+.main h1 {
+    text-align: center;
+    color: #222;
+    font-style: oblique;
+    font-weight: 800;
+    text-decoration: none;
+    font-size: 34px;
 }

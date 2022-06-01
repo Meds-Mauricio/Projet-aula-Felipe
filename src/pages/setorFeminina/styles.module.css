@@ -3,4 +3,15 @@
     font-style: oblique;
     text-align: center;
     color: rgb(255, 18, 10);
+    height: 406px;
+    
+}
+
+.main h1 {
+    text-align: center;
+    color: #222;
+    font-style: oblique;
+    font-weight: 800;
+    text-decoration: none;
+    font-size: 34px;
 }

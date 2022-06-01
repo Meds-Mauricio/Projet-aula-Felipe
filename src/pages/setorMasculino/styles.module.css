@@ -4,6 +4,10 @@
 
 }
 
+.main {
+height: 406px;
+}
+
 .main h1 {
     text-align: center;
     color: #222;
@@ -21,8 +25,6 @@
 }
 
 .grid { 
-     
-    
     margin-top: 46px;
 }
 
