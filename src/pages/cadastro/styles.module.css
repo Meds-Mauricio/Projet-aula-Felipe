@@ -1,12 +1,15 @@
 .main {
-    color: rgba(175, 142, 71, 0.788);
+    color: #222;
+    font-weight: bold;
+    font-style: oblique;
 }
- .section {
+
+.section {
      margin-top: 100px;
      width: 100%;
     }
 
- .main h1 {
+.main h1 {
     text-align: center;
     color: #222;
     font-style: oblique;

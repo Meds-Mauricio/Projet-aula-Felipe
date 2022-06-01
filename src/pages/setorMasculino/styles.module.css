@@ -29,9 +29,17 @@ height: 406px;
 }
 
 .card {
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
     display: flex;
-    justify-content: space-around;
-       
+    padding: 0.1rem;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    margin-top: 25px;
+    text-align: center;
+    justify-content: space-between;
+    flex-wrap: wrap;   
 }
 
 .card2 {
