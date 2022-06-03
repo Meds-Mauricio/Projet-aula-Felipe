@@ -22,7 +22,7 @@ export default function Formulario() {
                     <label className={style.label} for="email">Email:</label>
                     <input type="text" className={style.input} required />
                 </div>
-                <button class={style.submit} href="#" imput type="submit" value='enviar'>Enviar</button>
+                <button class={style.submit} href="#" imput type="submit" value='enviar'>Cadastro Finalizado</button>
             </form>
         </section>)
         
