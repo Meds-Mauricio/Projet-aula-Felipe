@@ -1,0 +1,45 @@
+.modal {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    background-color: rgba(0, 0, 0, .8);
+}
+
+.container {
+    background-color: #fff;
+    color: #000;
+    width: 60%;
+    height: 60%;
+    border-radius: 20px;
+}
+
+.close {
+    color:red;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    width: 32px;
+    height: 32px;
+    right: calc(-100% + 64px);
+    top: 16px cursor Pointer;
+}
+
+/* .modal &:before, :after {
+        content: ' ';
+        position: 2.5px;
+        width: 2.5px;
+        height: 24px;
+        background-color: #000;
+    } */
+
+
+/* &:before {
+    transform: rotate(45deg);
+}
+
+&:after {
+    transform: rotate(-45deg);
+} */
