@@ -35,8 +35,9 @@ export default function setorMasculino() {
     //         }
     //     }
     // ]
-const card = 
-
+    const click = () => {
+        window.location.href = "/cadastro"
+    }
     return (
         <>
             <section className={styles.container}>
@@ -51,24 +52,32 @@ const card =
                         <h1>Moda Masculina</h1>
                         <section className={styles.grid}>
                             <section className={styles.card}>
-                                <Card 
-                                    thumbnail="https://imgcentauro-a.akamaihd.net/900x900/94982202/bermuda-nike-monster-mesh-5-0-masculina-img.jpg"
-                                    title="Bermuda"
-                                    price="R$ 180,00" 
-                                   /> 
-                                
+                                <div onClick={click}>
                                     <Card
-                                    thumbnail="https://images-americanas.b2w.io/produtos/3102307601/imagens/mais-grossa-de-veludo-com-capuz-imprimir-suit-longo-juventude-luva-sports-men-sweater-f/3102307652_1_xlarge.jpg"
-                                    title="Conjunto de Moleton"
-                                    price="R$ 140,00"
-                                />
-                                <Card
-                                    thumbnail="https://cf.shopee.com.br/file/2b36a76a146ed36b1369185b56138eb0"
-                                    title="Calça Jeans"
-                                    price="R$ 40,00"
-                                />
+                                        thumbnail="https://imgcentauro-a.akamaihd.net/900x900/94982202/bermuda-nike-monster-mesh-5-0-masculina-img.jpg"
+                                        title="Bermuda"
+                                        price="R$ 180,00"
+                                    />
+                                </div>
+                                <div onClick={click}>
+                                    <Card
+                                        thumbnail="https://images-americanas.b2w.io/produtos/3102307601/imagens/mais-grossa-de-veludo-com-capuz-imprimir-suit-longo-juventude-luva-sports-men-sweater-f/3102307652_1_xlarge.jpg"
+                                        title="Conjunto de Moleton"
+                                        price="R$ 140,00"
+                                    />
+                                </div>
+                                <div onClick={click}>
+                                    <Card
+                                        thumbnail="https://cf.shopee.com.br/file/2b36a76a146ed36b1369185b56138eb0"
+                                        title="Calça Jeans"
+                                        price="R$ 40,00"
+                                    />
+                                </div>
                             </section>
 
+                            <div className="creatAccount">
+
+                            </div>
                             {/* <section className={styles.card2}
                                 <Card
                                     thumbnail="https://i.pinimg.com/originals/cc/02/23/cc0223936ab671be4f4144a31a155df7.jpg"
@@ -91,5 +100,6 @@ const card =
                 </div>
             </section>
         </>
+
     )
 }

@@ -17,6 +17,10 @@ export default function SetorInfantil() {
             }
             )
     }, [])
+
+    const click = () => {
+        window.location.href = "/cadastro"
+    }
     return (
         <>
             <Head>
@@ -31,7 +35,7 @@ export default function SetorInfantil() {
                 <section className={styles.cardsInfantil}>
                     {resposta && Object.values(resposta).map((item) => {
                         return (
-                            <div className={styles.card}>
+                            <div className={styles.card} onClick={click}>
                                 <img src={item.thumbnail} />
                                 <p>{item.price}</p>
                                 <p>{item.title}</p>

@@ -1,6 +1,5 @@
 import React from 'react'
 import style from './styles.module.css'
-import sectionCards from "../Card";
 
 export default function Card({ thumbnail, title, price, }) {
     return (

@@ -9,7 +9,6 @@ export default function setorFeminina() {
     const [resposta, setResposta] = useState([]);
     const [teste, setTeste] = useState([])
 
-
     useEffect(() => {
         axios.get('https://projeto-mock-de-roupas-default-rtdb.firebaseio.com/roupas/femininas.json')
             .then(function (response) {
@@ -17,7 +16,9 @@ export default function setorFeminina() {
             }
             )
     }, [])
-
+    const click = () => {
+        window.location.href = "/cadastro"
+    }
     return (
         <>
 
@@ -33,7 +34,7 @@ export default function setorFeminina() {
                 <section className={styles.cardsFeminina}>
                 {resposta && Object.values(resposta).map((item) => {
                     return (
-                            <div className={styles.card}>
+                            <div className={styles.card} onClick={click}>
                                 <img src={item.thumbnail} />
                                 <p>{item.tipo}</p>
                                 <p>{item.valor}</p>
