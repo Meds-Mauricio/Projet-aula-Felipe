@@ -1,4 +1,13 @@
+.container {
+    height: 665px;
+}
 
+.renderizar {
+    display: flex;
+    width: 100px;
+    z-index: 90;
+    
+}
 
 .main {
 height: 406px;
@@ -11,16 +20,20 @@ height: 406px;
     font-weight: 800;
     text-decoration: none;
     font-size: 34px;
-} 
+}
+
+.grid {
+    display: flex;
+}
+
 
 .container img {
     display: flex;
     width: 268px;
     height: 250px;
-    
 }
 
- .card {
+ .card, .cadr2 {
     max-width: 1440px;
     width: 100%;
     margin: 0 auto;

@@ -6,38 +6,78 @@ import Card from '../../components/Card'
 import { FaWhatsappSquare } from 'react-icons/fa';
 
 export default function setorMasculino() {
-    // const vendedor = [
-    //     {
-    //         nome: "Mauricio",
-    //         descricao_1: "Clica no icone do whatsap, e fala com o vendedor",
-    //         descricao_2: "Obrigado por comprar conosco",
-    //         contato: {
-    //             tel: "11 982620594",
-    //             whattsap: <a href="https://web.whatsapp.com/send?phone=5511982620594" target='_blank'><FaWhatsappSquare /></a>
-    //         }
-    //     },
-    //     {
-    //         nome: "Mauricio",
-    //         descricao_1: "Clica no icone do whatsap, e fala com o vendedor",
-    //         descricao_2: "Obrigado por comprar conosco",
-    //         contato: {
-    //             tel: "11 982620594",
-    //             whattsap: <a href="https://web.whatsapp.com/send?phone=5511982620594" target='_blank'><FaWhatsappSquare /></a>
-    //         }
-    //     },
-    //     {
-    //         nome: "Mauricio",
-    //         descricao_1: "Clica no icone do whatsap, e fala com o vendedor",
-    //         descricao_2: "Obrigado por comprar conosco",
-    //         contato: {
-    //             tel: "11 982620594",
-    //             whattsap: <a href="https://web.whatsapp.com/send?phone=5511982620594" target='_blank'><FaWhatsappSquare /></a>
-    //         }
-    //     }
-    // ]
+    let params
+    if (typeof window !== 'undefined') {
+        params = new URLSearchParams(window.location.search)
+    }
+
+    let urlParams = undefined
+    params && params.forEach((value, key) => {
+        urlParams = Object.assign({}, urlParams, {
+
+            [key]: value.toString()
+        })
+    })
+
+    console.log(urlParams, 'urlParams')
+    // console.log(urlParams?.roupas);
+
+    const renderizarRoupas = () => {
+        if (urlParams?.roupas === 'calca') {
+            return (
+                <img src='https://static3.tcdn.com.br/img/img_prod/793834/calca_masculina_jeans_azul_escuro_jeans_161016425_1_20201214193513.jpg' />
+            )
+        } else if (urlParams?.roupas === 'camisa') {
+            return (
+                <img src='https://www.chicbest.com/app/media/images_product/big/1239/1239235603-z1-1.jpg' />
+            )
+        } else if (urlParams?.roupas === 'bermuda') {
+            return (
+                <img src='https://cdnv2.moovin.com.br/santorefugio/imagens/produtos/det/bermuda-jeans-santo-refugio-020147-0008-93c8e145dfa413e93852ac3d300c1ad4.jpg' />
+            )
+        } else {
+            return <h1>Não tem mais roupas</h1>
+        }
+    }
+
+    const renderizarTamanho = () => {
+        if (urlParams?.tamanho === 'pequeno') {
+            return (
+                <section className={styles.roupaP}>
+                    <img src='https://m.media-amazon.com/images/I/71qjmJhDydL._AC_SX385_.jpg' />
+                </section>
+
+            )
+        } else if (urlParams?.tamanho === 'médio') {
+            return (
+                <section className={styles.roupaM}>
+                    <img src='https://img.elo7.com.br/product/main/1A1F834/camiseta-masculina-terra-media-senhor-dos-aneis-estampa-total-print.jpg' />
+                </section>
+
+            )
+        } else if (urlParams?.tamanho === 'grande') {
+            return (
+                <section className={styles.roupaG}>
+                    <img src='https://http2.mlstatic.com/D_NQ_NP_860388-MLB40375909755_012020-O.jpg' />
+                </section>
+
+            )
+        } else if (urlParams?.plusSize === 'plusSize') {
+            return (
+                <section className={styles.roupaPs}>
+                    <img src='https://a-static.mlcdn.com.br/1500x1500/kit-5-camisa-masculina-plus-size-g1-g2-g3-imperios/imperiosmodas/7879862259/40840492dbaf1b94ecdac05349a3c9ce.jpg' />
+                </section>
+            )
+        } else {
+            return <h1>não tem mais roupas</h1>
+        }
+    }
+
+
     const click = () => {
         window.location.href = "/cadastro"
     }
+
     return (
         <>
             <section className={styles.container}>
@@ -51,12 +91,21 @@ export default function setorMasculino() {
                     <main className={styles.main}>
                         <h1>Moda Masculina</h1>
                         <section className={styles.grid}>
+                <div className={styles.renderizar}>
+                    <div>
+                        {renderizarRoupas()}
+                    </div>
+
+                    <div>
+                        {renderizarTamanho()}
+                    </div>
+                </div>
                             <section className={styles.card}>
                                 <div onClick={click}>
                                     <Card
                                         thumbnail="https://imgcentauro-a.akamaihd.net/900x900/94982202/bermuda-nike-monster-mesh-5-0-masculina-img.jpg"
                                         title="Bermuda"
-                                        price="R$ 180,00"
+                                        price="R$ 80,00"
                                     />
                                 </div>
                                 <div onClick={click}>
@@ -70,35 +119,35 @@ export default function setorMasculino() {
                                     <Card
                                         thumbnail="https://cf.shopee.com.br/file/2b36a76a146ed36b1369185b56138eb0"
                                         title="Calça Jeans"
-                                        price="R$ 40,00"
+                                        price="R$ 120,00"
                                     />
                                 </div>
                             </section>
 
-                            <div className="creatAccount">
+                            {/* <div className="creatAccount">
 
-                            </div>
-                            {/* <section className={styles.card2}
+                                </div> */}
+                            {/* <section className={styles.card2}>
                                 <Card
                                     thumbnail="https://i.pinimg.com/originals/cc/02/23/cc0223936ab671be4f4144a31a155df7.jpg"
                                     title="Roupa Social"
                                     price="R$ 220,00"
                                 />
                                 <Card
-                                    thumbnail="https://img.lojasrenner.com.br/item/600580416/large/1.jpg"
+                                    thumbnail="https://www.barony.com.br/10403-large_default/camisas-masculinas-manga-comprida-com-estampas-de-retalhos-e-listras.jpg"
                                     title="Camisas"
                                     price="R$ 80,00"
                                 />
                                 <Card
-                                    thumbnail="https://www.barony.com.br/10403-large_default/camisas-masculinas-manga-comprida-com-estampas-de-retalhos-e-listras.jpg"
+                                    thumbnail="https://img.lojasrenner.com.br/item/600580416/large/1.jpg"
                                     title="Blusa"
                                     price="R$ 80,00"
                                 />
                             </section> */}
                         </section>
                     </main>
-                </div>
-            </section>
+                </div >
+            </section >
         </>
 
     )

@@ -25,22 +25,22 @@
     height: 32px;
     right: calc(-100% + 64px);
     top: 16px cursor Pointer;
+}
 
- .before
-  &:after {
+ /* before
+after {
         content: ' ';
         position: 2.5px;
         width: 2.5px;
         height: 24px;
         background-color: #000;
-    }
+    } */
 
-
-&:before {
+/* &:before {
     transform: rotate(45deg);
 }
 
 &:after {
     transform: rotate(-45deg);
 }
-}
+} */
