@@ -16,7 +16,7 @@ export default function QueryString() {
                     <option value="calça">Calça</option>
                     <option value="camisa">Camisa</option>
                     <option value="bermuda">Bermuda</option>
-                    <option value="saia">Saia</option>
+                    {/* <option value="saia">Saia</option> */}
                 </select>
                 <select onChange={(e) => setTamanho(e.target.value)}>
                     <option>Selecione</option>
