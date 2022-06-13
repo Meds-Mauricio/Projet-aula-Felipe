@@ -3,9 +3,8 @@ import Head from 'next/head'
 import Image from 'next/image'
 import styles from './styles.module.css'
 import Footer from '../../components/Footer'
-import Card from '../../components/Card'
-// import { FaWhatsappSquare } from 'react-icons/fa';
-
+// import Card from '../../components/Card'
+import Mock from '../../mock'
 export default function setorMasculino() {
     const [roupas, setRoupas] = useState()
     let params
@@ -24,38 +23,37 @@ export default function setorMasculino() {
     console.log(urlParams, 'urlParams')
     // console.log(urlParams?.roupas);
 
-        const renderizarRoupas = () => {
-            if (urlParams?.roupas === 'calca') {
-                console.log('1')
-                return (
-                    <section className={styles.calça}>
-                        <img src='https://static3.tcdn.com.br/img/img_prod/793834/calca_masculina_jeans_azul_escuro_jeans_161016425_1_20201214193513.jpg' />
-                    </section>
-                )
-            } else if (urlParams?.roupas === 'camisa') {
-                console.log('2')
-                return (
-                    <section className={styles.camisa}>
-                        <img src='https://www.chicbest.com/app/media/images_product/big/1239/1239235603-z1-1.jpg' />
-                    </section>
-                )
-            } else if (urlParams?.roupas === 'bermuda') {
-                return (
-                    <section className={styles.bermuda}>
-                        <img src='https://cdnv2.moovin.com.br/santorefugio/imagens/produtos/det/bermuda-jeans-santo-refugio-020147-0008-93c8e145dfa413e93852ac3d300c1ad4.jpg' />
-                    </section>
-                )
-            } else {
-                return (
+    const renderizarRoupas = () => {
+        if (urlParams?.roupas === 'calca') {
+            console.log('1')
+            return (
+                <section className={styles.calça}>
+                    <img src='https://static3.tcdn.com.br/img/img_prod/793834/calca_masculina_jeans_azul_escuro_jeans_161016425_1_20201214193513.jpg' />
+                </section>
+            )
+        } else if (urlParams?.roupas === 'camisa') {
+            console.log('2')
+            return (
+                <section className={styles.camisa}>
+                    <img src='https://api-de-roupas-default-rtdb.firebaseio.com/roupas/masculina.json' />
+                </section>
+            )
+        } else if (urlParams?.roupas === 'bermuda') {
+            return (
+                <section className={styles.bermuda}>
+                    <img src='https://cdnv2.moovin.com.br/santorefugio/imagens/produtos/det/bermuda-jeans-santo-refugio-020147-0008-93c8e145dfa413e93852ac3d300c1ad4.jpg' />
+                </section>
+            )
+        } else {
+            return (
 
-                    <section className={styles.vazio}>
-                        <h1>Não tem mais roupas</h1>
-                    </section>
-                )
-            }
+                <section className={styles.vazio}>
+                    <h1>Não tem mais roupas</h1>
+                </section>
+            )
         }
-        return setRoupas(renderizarRoupas)
-
+    }
+    // return setRoupas(renderizarRoupas)
 
     useEffect(() => {
         const renderizarTamanho = () => {
@@ -183,50 +181,14 @@ export default function setorMasculino() {
                         <section className={styles.grid}>
 
                             <div className={styles.renderizar}>
-                                <div>
-
-                                </div>
+                                <Mock />
                                 {roupas}
-                                <div>
-                                    {/* {renderizarTamanho()} */}
-                                </div>
-
-                                <div>
-                                    {/* {renderizarTamanho1()} */}
-                                </div>
-
-                                <div>
-                                    {/* {renderizarTamanho2()} */}
-                                </div>
                             </div>
 
-                            {/* <section className={styles.card}> */}
-                            {/* <div onClick={click}>
-                                    <Card
-                                        thumbnail="https://imgcentauro-a.akamaihd.net/900x900/94982202/bermuda-nike-monster-mesh-5-0-masculina-img.jpg"
-                                        title="Bermuda"
-                                        price="R$ 80,00"
-                                    />
-                                </div>
-                                <div onClick={click}>
-                                    <Card
-                                        thumbnail="https://images-americanas.b2w.io/produtos/3102307601/imagens/mais-grossa-de-veludo-com-capuz-imprimir-suit-longo-juventude-luva-sports-men-sweater-f/3102307652_1_xlarge.jpg"
-                                        title="Conjunto de Moleton"
-                                        price="R$ 140,00"
-                                    />
-                                </div>
-                                <div onClick={click}>
-                                    <Card
-                                        thumbnail="https://cf.shopee.com.br/file/2b36a76a146ed36b1369185b56138eb0"
-                                        title="Calça Jeans"
-                                        price="R$ 120,00"
-                                    />
-                                </div>
-                            </section> */}
 
                             {/* <div className="creatAccount">
 
-                                </div> */}
+                            </div> */}
                             {/* <section className={styles.card2}>
                                 <Card
                                     thumbnail="https://i.pinimg.com/originals/cc/02/23/cc0223936ab671be4f4144a31a155df7.jpg"
