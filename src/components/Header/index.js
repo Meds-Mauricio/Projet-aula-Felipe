@@ -13,7 +13,7 @@ export default function Header() {
                             <a href='/'>Home</a>
                             <a href='/setorMasculino'>Moda Masculino</a>
                             <a href='/setorFeminina'>Moda Feminina</a>
-                            <a href='/setorInfantil'>Moda Infantil</a>
+                            {/* <a href='/setorInfantil'>Moda Infantil</a> */}
                             {/* <a href='/cadastro'>Cadastro</a> */}
                         </ul>
                     </nav>

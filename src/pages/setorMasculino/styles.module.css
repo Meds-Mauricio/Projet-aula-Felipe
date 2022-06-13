@@ -1,16 +1,8 @@
-.container {
-    height: 665px;
-}
-
-.renderizar {
-    display: flex;
-    width: 100px;
-    z-index: 90;
-
-}
-
 .main {
-    height: 406px;
+    height: 100vh;
+    font-style: oblique;
+    text-align: center;
+    height: 116px;
 }
 
 .main h1 {
@@ -22,19 +14,7 @@
     font-size: 34px;
 }
 
-.grid {
-    display: flex;
-}
-
-
-.container img {
-    display: flex;
-    width: 268px;
-    height: 250px;
-}
-
-.card,
-.cadr2 {
+.cardsMasculina {
     max-width: 1440px;
     width: 100%;
     margin: 0 auto;
@@ -46,4 +26,18 @@
     text-align: center;
     justify-content: space-between;
     flex-wrap: wrap;
+}
+
+.cardsMasculina img{
+    width: 350px;
+    height: 350px;
+    margin-top: 10px;
+}
+
+.card {
+    width: 30%;
+    text-align: center;
+    box-shadow: rgb(0 0 0 / 20%) 0px 0px 2px 2px;
+    border-radius: 0.9rem;
+    margin-top: 30px;
 }

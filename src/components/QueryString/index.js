@@ -14,7 +14,7 @@ export default function QueryString() {
                 <select onChange={(e) => setRoupas(e.target.value)}>
                     <option>Selecione</option>
                     <option value="calça">Calça</option>
-                    <option value="camisa">Camisa</option>
+                    <option value="camiseta">Camiseta</option>
                     <option value="bermuda">Bermuda</option>
                     {/* <option value="saia">Saia</option> */}
                 </select>
