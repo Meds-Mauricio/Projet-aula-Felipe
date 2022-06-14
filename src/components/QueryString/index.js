@@ -25,7 +25,7 @@ export default function QueryString() {
                     <option value="grande">Grande</option>
                     <option value="plusSize">Plus Size</option>
                 </select>
-                <button onClick={() => window.location.href = `/setorMasculino?&roupas=${roupas}&tamanho=${tamanho}`}>Filtrar</button>
+                    <button onClick={() => window.location.href = `/${roupas}&tamanho=${tamanho}&grande=${grande}`}>Filtrar</button>
             </section>
         )
     }

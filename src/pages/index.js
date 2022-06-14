@@ -2,7 +2,7 @@ import Head from 'next/head'
 import styles from '../../styles/Home.module.css'
 import Banner from '../components/Banner'
 import Footer from '../components/Footer'
-import QueryString from '../components/QueryString'
+// import QueryString from '../components/QueryString'
 
 export default function Home() {
 
@@ -14,7 +14,7 @@ export default function Home() {
                 <link rel="icon" href="/favicon.ico" />
             </Head>    
             <Banner />
-            <QueryString />
+            {/* <QueryString /> */}
             
         </>
 

@@ -3,6 +3,7 @@ import Image from 'next/image'
 import styles from './styles.module.css'
 import react, { useState, useEffect } from 'react'
 import axios from 'axios'
+import QueryString from '../../components/QueryString'
 
 export default function setorFeminina() {
 
@@ -19,7 +20,6 @@ export default function setorFeminina() {
     const click = () => {
         window.location.href = "/cadastro"
     }
-    
     return (
         <>
             <Head>
@@ -30,8 +30,11 @@ export default function setorFeminina() {
             <section className={styles.cabecalho}>
                 <main className={styles.main}>
                     <h1>Moda Feminina</h1>
+                    <QueryString />
                 </main>
-                Camisetas
+                <div className={styles.roupas}>
+                    <h2>Camisetas</h2>
+                </div>
                 <section className={styles.cardsFeminina}>
                     {resposta && Object?.values(resposta?.camisetas).map((item) => {
                         return (
@@ -44,8 +47,11 @@ export default function setorFeminina() {
                         )
                     }
                     )
-                    },
+                    }
                 </section>
+                <div className={styles.roupas}>
+                    <h3>Calças</h3>
+                </div>
                 <section className={styles.cardsFeminina}>
                     {resposta && Object?.values(resposta?.calcas).map((item) => {
                         return (
@@ -59,7 +65,10 @@ export default function setorFeminina() {
                     }
                     )
                     }
-                </section>     
+                </section>
+                <div className={styles.roupas}>
+                    <h4>Bermudas</h4>
+                </div>
                 <section className={styles.cardsFeminina}>
                     {resposta && Object?.values(resposta?.bermudas).map((item) => {
                         return (

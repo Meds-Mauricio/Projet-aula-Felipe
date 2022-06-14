@@ -14,6 +14,34 @@
     font-size: 34px;
 }
 
+.cabecalho h2 {
+    font-style: oblique;
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 25px;
+}
+.cabecalho h3 {
+    font-style: oblique;
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 25px;
+}
+
+.cabecalho h4 {
+    font-style: oblique;
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 25px;
+}
+
+.roupas {
+    padding: 0px 230px;
+    font-style: oblique;
+    font-weight: bold;
+    margin-bottom: 0px;
+    height: 8px;
+}
+
 .cardsMasculina {
     max-width: 1440px;
     width: 100%;
@@ -22,8 +50,6 @@
     padding: 0.1rem;
     font-size: 1.5rem;
     font-weight: bolder;
-    margin-top: 25px;
-    text-align: center;
     justify-content: space-between;
     flex-wrap: wrap;
 }
