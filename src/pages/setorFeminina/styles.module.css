@@ -35,13 +35,22 @@
     margin-top: 25px;
 }
 
-.roupas {
+.roupas { 
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
     padding: 0px 230px;
     font-style: oblique;
     font-weight: bold;
     margin-bottom: 0px;
-    height: 8px;
+    height: 33px;
 }
+
+.roupas input {
+    margin-left: 15px;
+}
+
 .cardsFeminina {
     max-width: 1440px;
     width: 100%;

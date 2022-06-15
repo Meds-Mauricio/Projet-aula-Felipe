@@ -6,8 +6,11 @@ import axios from 'axios'
 import QueryString from '../../components/QueryString'
 
 export default function setorFeminina() {
-
+    const [usuario, setUsuario] = useState();
     const [resposta, setResposta] = useState();
+    // const [pequeno, setPequeno] = useState();
+    // const [medio, setMedio] = useState();
+    // const [grande, setGrande] = useState();
 
     useEffect(() => {
         axios.get('https://api-de-roupas-default-rtdb.firebaseio.com/roupas/femininas.json')
@@ -17,6 +20,7 @@ export default function setorFeminina() {
             }
             )
     }, []);
+
     const click = () => {
         window.location.href = "/cadastro"
     }
@@ -30,10 +34,15 @@ export default function setorFeminina() {
             <section className={styles.cabecalho}>
                 <main className={styles.main}>
                     <h1>Moda Feminina</h1>
-                    <QueryString />
                 </main>
+
                 <div className={styles.roupas}>
                     <h2>Camisetas</h2>
+                    <div className='checkbox'>
+                        <input type={"checkbox"} /><label>grande</label>
+                        <input type={"checkbox"} /><label>médio</label>
+                        <input type={"checkbox"} /><label>pequeno</label>
+                    </div>
                 </div>
                 <section className={styles.cardsFeminina}>
                     {resposta && Object?.values(resposta?.camisetas).map((item) => {
@@ -45,10 +54,9 @@ export default function setorFeminina() {
                                 <p>{item.size}</p>
                             </div>
                         )
-                    }
-                    )
-                    }
+                    })}
                 </section>
+
                 <div className={styles.roupas}>
                     <h3>Calças</h3>
                 </div>
@@ -62,10 +70,9 @@ export default function setorFeminina() {
                                 <p>{item.size}</p>
                             </div>
                         )
-                    }
-                    )
-                    }
+                    })}
                 </section>
+
                 <div className={styles.roupas}>
                     <h4>Bermudas</h4>
                 </div>
@@ -79,16 +86,9 @@ export default function setorFeminina() {
                                 <p>{item.size}</p>
                             </div>
                         )
-                    }
-                    )
-                    }
+                    })}
                 </section>
-
             </section>
-
         </>
     )
-
-
-
 }
