@@ -6,8 +6,8 @@ import axios from 'axios'
 import QueryString from '../../components/QueryString'
 
 export default function setorFeminina() {
-    const [usuario, setUsuario] = useState();
     const [resposta, setResposta] = useState();
+    const [selecionado, setSelecionado] = useState([]);
     // const [pequeno, setPequeno] = useState();
     // const [medio, setMedio] = useState();
     // const [grande, setGrande] = useState();
@@ -20,10 +20,12 @@ export default function setorFeminina() {
             }
             )
     }, []);
-
-    const click = () => {
-        window.location.href = "/cadastro"
+    const click = (produto) => {
+        setSelecionado([...selecionado, produto])
+        localStorage.setItem('selecionado', JSON.stringify(selecionado))
+        // window.location.href = "/cadastro"
     }
+
     return (
         <>
             <Head>
@@ -43,11 +45,14 @@ export default function setorFeminina() {
                         <input type={"checkbox"} /><label>médio</label>
                         <input type={"checkbox"} /><label>pequeno</label>
                     </div>
+                    <QueryString />
                 </div>
                 <section className={styles.cardsFeminina}>
                     {resposta && Object?.values(resposta?.camisetas).map((item) => {
                         return (
-                            <div className={styles.card} onClick={click}>
+                            <div className={styles.card}
+                                onClick={() => click(item)}
+                                onChange={(e) => setSelecionado(e.target.value)}>
                                 <img src={item.img} />
                                 <p>{item.name}</p>
                                 <p>{item.price}</p>
@@ -63,7 +68,9 @@ export default function setorFeminina() {
                 <section className={styles.cardsFeminina}>
                     {resposta && Object?.values(resposta?.calcas).map((item) => {
                         return (
-                            <div className={styles.card} onClick={click}>
+                            <div className={styles.card}
+                                onClick={() => click(item)}
+                                onChange={(e) => setSelecionado(e.target.value)}>
                                 <img src={item.img} />
                                 <p>{item.name}</p>
                                 <p>{item.price}</p>
@@ -79,7 +86,9 @@ export default function setorFeminina() {
                 <section className={styles.cardsFeminina}>
                     {resposta && Object?.values(resposta?.bermudas).map((item) => {
                         return (
-                            <div className={styles.card} onClick={click}>
+                            <div className={styles.card}
+                                onClick={() => click(item)}
+                                onChange={(e) => setSelecionado(e.target.value)}>
                                 <img src={item.img} />
                                 <p>{item.name}</p>
                                 <p>{item.price}</p>
@@ -92,3 +101,4 @@ export default function setorFeminina() {
         </>
     )
 }
+

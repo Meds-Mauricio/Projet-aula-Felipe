@@ -6,7 +6,7 @@ import Footer from '../Footer'
 
 export default function Formulario() {
     const click = () => {
-        window.location.href = "/modal"
+        window.location.href = "/compras"
     }
     const [isModalVisible, setIsModalVisible] = useState(false)
 

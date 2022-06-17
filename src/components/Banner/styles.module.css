@@ -3,27 +3,30 @@
     height: auto;
 }
 
- .imgBanners {
-    width: 1440px;
-    height: 537px;
-}
-
-
 .container {
     min-width: max-content;
     width: 100%;
-}
+} 
 
 .conainer .selected {
     width: min-content;
-    width: 1440px;
+    max-width: 1440px;
+    width: 100%\;
+}
+
+.selected img {
+    max-width: 1920px;
+    width: 100%;    
 }
 
  .banner {
-    width: 100%;
+    width: 80%;
 }
 
 
 
+/* @media screen and (max-width: 1360px){
+    max-width: 1360px;
+    width: 100%;
 
-
+} */

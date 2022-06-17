@@ -6,8 +6,7 @@ import axios from 'axios'
 
 export default function setorMasculino() {
     const [resposta, setResposta] = useState();
-    const [busca, setBusca] = useState();
-    const [camisa, setCamisa] = useState();
+    const [selecionado, setSelecionado] = useState([]);
     useEffect(() => {
         axios.get('https://api-de-roupas-default-rtdb.firebaseio.com/roupas/masculina.json')
 
@@ -16,14 +15,12 @@ export default function setorMasculino() {
                 setResposta(response?.data);
             })
     }, []);
-
-    const click = () => {
-            localStorage.setItem('selecionado', JSON.stringify(resposta))
-            // <input onChange={(e) => setCamisa(e.target.value)} 
-
-            window.location.href = "/cadastro"
+    const click = (produto) => {
+        setSelecionado([...selecionado, produto])
+        localStorage.setItem('selecionado', JSON.stringify(selecionado))
+        // window.location.href = "/cadastro"
     }
-
+    // console.log(selecionado);
     return (
         <>
             <Head>
@@ -32,8 +29,9 @@ export default function setorMasculino() {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
             <section className={styles.cabecalho}>
+                {/* <input onchange={(e) => { setCamisa(e.target.value) }} /> */}
                 <main className={styles.main}>
-                    <h1>Moda Masculina</h1>
+                    <h1>Moda masculina</h1>
                     {/* <QueryString /> */}
                 </main>
 
@@ -47,14 +45,14 @@ export default function setorMasculino() {
                 </div>
                 <section className={styles.cardsMasculina}>
                     {resposta && Object?.values(resposta?.camisetas).map((item) => {
-
                         return (
-                            <div className={styles.card} onClick={click}>
+                            <div className={styles.card}
+                                onClick={() => click(item)}
+                                onChange={(e) => setSelecionado(e.target.value)}>
                                 <img src={item.img} />
                                 <p>{item.name}</p>
                                 <p>{item.price}</p>
                                 <p>{item.size}</p>
-                                {/* <input onChange={(e) => { setBusca(e.target.value) }} /> */}
                             </div>
                         )
                     })}
@@ -66,7 +64,9 @@ export default function setorMasculino() {
                 <section className={styles.cardsMasculina}>
                     {resposta && Object?.values(resposta?.calcas).map((item) => {
                         return (
-                            <div className={styles.card} onClick={click}>
+                            <div className={styles.card
+                            } onClick={() => click(item)}
+                                onChange={(e) => setSelecionado(e.target.value)}>
                                 <img src={item.img} />
                                 <p>{item.name}</p>
                                 <p>{item.price}</p>
@@ -82,7 +82,10 @@ export default function setorMasculino() {
                 <section className={styles.cardsMasculina}>
                     {resposta && Object?.values(resposta?.bermudas).map((item) => {
                         return (
-                            <div className={styles.card} onClick={click}>
+                            <div className={styles.card}
+                                onClick={() =>
+                                    click(item)}
+                                onChange={(e) => setSelecionado(e.target.value)}>
                                 <img src={item.img} />
                                 <p>{item.name}</p>
                                 <p>{item.price}</p>
