@@ -1,10 +1,32 @@
-.imgBanners {
+.section {
+    width: 1440px;
+    height: auto;
+}
+
+.container {
+    min-width: max-content;
     width: 100%;
-    height: 537px;
-    margin-left: 0 300px;
+} 
+
+.conainer .selected {
+    width: min-content;
+    max-width: 1440px;
+    width: 100%\;
+}
+
+.selected img {
+    max-width: 1920px;
+    width: 100%;    
+}
+
+ .banner {
+    width: 80%;
 }
 
 
 
+/* @media screen and (max-width: 1360px){
+    max-width: 1360px;
+    width: 100%;
 
-
+} */
