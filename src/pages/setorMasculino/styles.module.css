@@ -17,20 +17,22 @@
 .cabecalho h2 {
     font-style: oblique;
     font-weight: bold;
-    font-size: 20px;
     margin-top: 25px;
 }
+
+.checkbox{
+    margin-right: 390px;
+}
+
 .cabecalho h3 {
     font-style: oblique;
     font-weight: bold;
-    font-size: 20px;
     margin-top: 25px;
 }
 
 .cabecalho h4 {
     font-style: oblique;
     font-weight: bold;
-    font-size: 20px;
     margin-top: 25px;
 }
 
@@ -39,11 +41,11 @@
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
-    padding: 0px 230px;
     font-style: oblique;
     font-weight: bold;
     margin-bottom: 0px;
     height: 33px;
+    margin-left: 310px;
 }
 
 .roupas input {
@@ -74,4 +76,11 @@
     box-shadow: rgb(0 0 0 / 20%) 0px 0px 2px 2px;
     border-radius: 0.9rem;
     margin-top: 30px;
+}
+
+.card img {
+    width: 100%;
+    height: 350px;
+    margin-top: -1px;
+    border-radius: 0.9rem 0.9rem 0 0;
 }

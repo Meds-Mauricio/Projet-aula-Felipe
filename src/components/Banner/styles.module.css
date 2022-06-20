@@ -5,22 +5,14 @@
 
 .container {
     min-width: max-content;
+    max-width: 1350px;
     width: 100%;
+    margin: 0 auto;
 } 
 
-.conainer .selected {
-    width: min-content;
-    max-width: 1440px;
-    width: 100%\;
-}
-
-.selected img {
-    max-width: 1920px;
-    width: 100%;    
-}
-
  .banner {
-    width: 80%;
+    width: 100vw;
+    margin: 0 auto;
 }
 
 

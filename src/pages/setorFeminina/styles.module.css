@@ -40,11 +40,11 @@
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
-    padding: 0px 230px;
     font-style: oblique;
     font-weight: bold;
     margin-bottom: 0px;
     height: 33px;
+    margin-left: 310px;
 }
 
 .roupas input {
@@ -63,10 +63,11 @@
     flex-wrap: wrap;
 }
 
-.cardsFeminina  img{
-    width: 350px;
+.card img {
+    width: 100%;
     height: 350px;
-    margin-top: 10px;
+    margin-top: -1px;
+    border-radius: 0.9rem 0.9rem 0 0;
 }
 
 .card {

@@ -3,7 +3,6 @@ import Image from 'next/image'
 import styles from './styles.module.css'
 import react, { useState, useEffect } from 'react'
 import axios from 'axios'
-import QueryString from '../../components/QueryString'
 
 export default function setorFeminina() {
     const [resposta, setResposta] = useState();
@@ -15,7 +14,7 @@ export default function setorFeminina() {
     useEffect(() => {
         axios.get('https://api-de-roupas-default-rtdb.firebaseio.com/roupas/femininas.json')
             .then(function (response) {
-                console.log(response?.data)
+                // console.log(response?.data)
                 setResposta(response?.data);
             }
             )
@@ -23,8 +22,14 @@ export default function setorFeminina() {
     const click = (produto) => {
         setSelecionado([...selecionado, produto])
         localStorage.setItem('selecionado', JSON.stringify(selecionado))
-        // window.location.href = "/cadastro"
+        window.location.href = "/compras"
     }
+
+//    const compras =(roupas) => {
+//    return (
+
+// }
+   
 
     return (
         <>
@@ -45,7 +50,6 @@ export default function setorFeminina() {
                         <input type={"checkbox"} /><label>médio</label>
                         <input type={"checkbox"} /><label>pequeno</label>
                     </div>
-                    <QueryString />
                 </div>
                 <section className={styles.cardsFeminina}>
                     {resposta && Object?.values(resposta?.camisetas).map((item) => {

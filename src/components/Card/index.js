@@ -1,18 +1,13 @@
 import React from 'react'
 import style from './styles.module.css'
 
-export default function Card({ thumbnail, title, price, }) {
+export default function Card({ imagem }) {
     return (
-        <>
             <section className={style.container}>
-                <div className={style.thumbnail}>
-                    <img src={thumbnail} />
-                </div>
-                <div className={style.infocontent}>
-                    <span className={style.title}>{title}</span>
-                    <span className={style.price}>{price}</span>
+                <div className={style.imagens}>
+                    <img src={imagem} />
+                    <p>Camiseta</p>
                 </div>
             </section>
-        </>
     )
 }

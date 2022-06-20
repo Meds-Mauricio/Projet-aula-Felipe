@@ -5,22 +5,22 @@ import react, { useState, useEffect } from 'react'
 import axios from 'axios'
 
 export default function setorMasculino() {
+
+
     const [resposta, setResposta] = useState();
     const [selecionado, setSelecionado] = useState([]);
+
     useEffect(() => {
         axios.get('https://api-de-roupas-default-rtdb.firebaseio.com/roupas/masculina.json')
 
             .then(function (response) {
-                console.log(response?.data);
                 setResposta(response?.data);
             })
     }, []);
     const click = (produto) => {
         setSelecionado([...selecionado, produto])
         localStorage.setItem('selecionado', JSON.stringify(selecionado))
-        // window.location.href = "/cadastro"
     }
-    // console.log(selecionado);
     return (
         <>
             <Head>
@@ -32,7 +32,6 @@ export default function setorMasculino() {
                 {/* <input onchange={(e) => { setCamisa(e.target.value) }} /> */}
                 <main className={styles.main}>
                     <h1>Moda masculina</h1>
-                    {/* <QueryString /> */}
                 </main>
 
                 <div className={styles.roupas}>
