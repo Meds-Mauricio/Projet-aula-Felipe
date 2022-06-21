@@ -30,18 +30,18 @@ export default function setorMasculino() {
             </Head>
             <section className={styles.cabecalho}>
                 {/* <input onchange={(e) => { setCamisa(e.target.value) }} /> */}
-                <main className={styles.main}>
+                {/* <main className={styles.main}> */}
                     <h1>Moda masculina</h1>
-                </main>
+                {/* </main> */}
 
-                <div className={styles.roupas}>
-                    <h2>Camisetas</h2>
+                {/* <div className={styles.roupas}>
                     <div className='checkbox'>
-                        <input type={"checkbox"} /><label>grande</label>
-                        <input type={"checkbox"} /><label>médio</label>
-                        <input type={"checkbox"} /><label>pequeno</label>
+                    <input type={"checkbox"} /><label>grande</label>
+                    <input type={"checkbox"} /><label>médio</label>
+                    <input type={"checkbox"} /><label>pequeno</label>
                     </div>
-                </div>
+                </div> */}
+                    <h2>Camisetas</h2>
                 <section className={styles.cardsMasculina}>
                     {resposta && Object?.values(resposta?.camisetas).map((item) => {
                         return (
@@ -56,10 +56,7 @@ export default function setorMasculino() {
                         )
                     })}
                 </section>
-
-                <div className={styles.roupas}>
-                    <h3>Calças</h3>
-                </div>
+                    <h2>Calças</h2>
                 <section className={styles.cardsMasculina}>
                     {resposta && Object?.values(resposta?.calcas).map((item) => {
                         return (
@@ -74,10 +71,7 @@ export default function setorMasculino() {
                         )
                     })}
                 </section>
-
-                <div className={styles.roupas}>
-                    <h4>Bermudas</h4>
-                </div>
+                    <h2>Bermudas</h2>
                 <section className={styles.cardsMasculina}>
                     {resposta && Object?.values(resposta?.bermudas).map((item) => {
                         return (

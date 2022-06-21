@@ -5,7 +5,6 @@ import { FaFacebookSquare } from 'react-icons/fa';
 
 export default function Footer() {
     return (
-        <>
             <section className={style.container}>
                 <div className={style.rodape} >
                     <div>
@@ -28,6 +27,5 @@ export default function Footer() {
                     </div>
                 </div>
             </section>
-        </>
     )
 }

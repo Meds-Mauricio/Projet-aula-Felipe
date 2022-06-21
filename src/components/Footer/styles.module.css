@@ -1,12 +1,7 @@
-.section {
+.container { 
     width: 100%;
-    z-index: 0;
-}
-
-.container {
     display: flex;
     justify-content: space-evenly;
-    padding: 1rem;
     z-index: 1;
     color: #FFFAFA;
     text-align: center;
@@ -18,7 +13,7 @@
 .rodape {
     display: flex;
     height: 211px;
-    width: 720px;
+    width: 825px;
     justify-content: space-between;
     align-items: center;
 }
@@ -92,4 +87,6 @@
     width: 2rem;
     margin-left: 1rem;
     font-size: 35px;
+    color: #385898;
+    background-color: #FFFAFA;
 }

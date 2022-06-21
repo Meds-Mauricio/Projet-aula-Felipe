@@ -1,11 +1,4 @@
-.main {
-    height: 100vh;
-    font-style: oblique;
-    text-align: center;
-    height: 116px;
-}
-
-.main h1 {
+.cabecalho h1 {
     text-align: center;
     color: #222;
     font-style: oblique;
@@ -17,47 +10,17 @@
 .cabecalho h2 {
     font-style: oblique;
     font-weight: bold;
-    font-size: 20px;
-    margin-top: 25px;
-}
-
-.cabecalho h3 {
-    font-style: oblique;
-    font-weight: bold;
-    font-size: 20px;
-    margin-top: 25px;
-}
-
-.cabecalho h4 {
-    font-style: oblique;
-    font-weight: bold;
-    font-size: 20px;
-    margin-top: 25px;
-}
-
-.roupas { 
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
-    font-style: oblique;
-    font-weight: bold;
-    margin-bottom: 0px;
-    height: 33px;
-    margin-left: 310px;
-}
-
-.roupas input {
-    margin-left: 15px;
+    color: aliceblue;
+    padding: 1rem;
+    margin-top: 35px;
+    width: 100%;
+    background-color: #222;
 }
 
 .cardsFeminina {
-    max-width: 1440px;
-    width: 100%;
+    width: 1374px;
     margin: 0 auto;
     display: flex;
-    padding: 0.1rem;
-    font-size: 1.5rem;
     font-weight: bolder;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -76,4 +39,8 @@
     box-shadow: rgb(0 0 0 / 20%) 0px 0px 2px 2px;
     border-radius: 0.9rem;
     margin-top: 30px;
+}
+
+.card p {
+    text-transform: capitalize;
 }

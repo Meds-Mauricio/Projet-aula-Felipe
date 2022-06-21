@@ -39,18 +39,15 @@ export default function setorFeminina() {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
             <section className={styles.cabecalho}>
-                <main className={styles.main}>
                     <h1>Moda Feminina</h1>
-                </main>
 
-                <div className={styles.roupas}>
-                    <h2>Camisetas</h2>
-                    <div className='checkbox'>
+                    {/* <div className='checkbox'>
                         <input type={"checkbox"} /><label>grande</label>
                         <input type={"checkbox"} /><label>médio</label>
                         <input type={"checkbox"} /><label>pequeno</label>
-                    </div>
-                </div>
+                    </div> */}
+
+                    <h2>Camisetas</h2>
                 <section className={styles.cardsFeminina}>
                     {resposta && Object?.values(resposta?.camisetas).map((item) => {
                         return (
@@ -66,9 +63,7 @@ export default function setorFeminina() {
                     })}
                 </section>
 
-                <div className={styles.roupas}>
-                    <h3>Calças</h3>
-                </div>
+                    <h2>Calças</h2>
                 <section className={styles.cardsFeminina}>
                     {resposta && Object?.values(resposta?.calcas).map((item) => {
                         return (
@@ -84,9 +79,7 @@ export default function setorFeminina() {
                     })}
                 </section>
 
-                <div className={styles.roupas}>
-                    <h4>Bermudas</h4>
-                </div>
+                    <h2>Bermudas</h2>
                 <section className={styles.cardsFeminina}>
                     {resposta && Object?.values(resposta?.bermudas).map((item) => {
                         return (
