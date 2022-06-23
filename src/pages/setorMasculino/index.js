@@ -20,6 +20,7 @@ export default function setorMasculino() {
     const click = (produto) => {
         setSelecionado([...selecionado, produto])
         localStorage.setItem('selecionado', JSON.stringify(selecionado))
+        window.location.href = "/compras"
     }
     return (
         <>
@@ -31,17 +32,17 @@ export default function setorMasculino() {
             <section className={styles.cabecalho}>
                 {/* <input onchange={(e) => { setCamisa(e.target.value) }} /> */}
                 {/* <main className={styles.main}> */}
-                    <h1>Moda masculina</h1>
+                <h1>Moda masculina</h1>
                 {/* </main> */}
 
-                {/* <div className={styles.roupas}>
+                <div className={styles.roupas}>
                     <div className='checkbox'>
-                    <input type={"checkbox"} /><label>grande</label>
-                    <input type={"checkbox"} /><label>médio</label>
-                    <input type={"checkbox"} /><label>pequeno</label>
+                        <input type={"checkbox"} /><label>grande</label>
+                        <input type={"checkbox"} /><label>médio</label>
+                        <input type={"checkbox"} /><label>pequeno</label>
                     </div>
-                </div> */}
-                    <h2>Camisetas</h2>
+                </div>
+                <h2>Camisetas</h2>
                 <section className={styles.cardsMasculina}>
                     {resposta && Object?.values(resposta?.camisetas).map((item) => {
                         return (
@@ -56,13 +57,14 @@ export default function setorMasculino() {
                         )
                     })}
                 </section>
-                    <h2>Calças</h2>
+                <h2>Calças</h2>
                 <section className={styles.cardsMasculina}>
                     {resposta && Object?.values(resposta?.calcas).map((item) => {
                         return (
-                            <div className={styles.card
-                            } onClick={() => click(item)}
-                                onChange={(e) => setSelecionado(e.target.value)}>
+                            <div className={styles.card}>
+
+                                {/* // } onClick={() => click(item)}
+                            //     onChange={(e) => setSelecionado(e.target.value)}> */}
                                 <img src={item.img} />
                                 <p>{item.name}</p>
                                 <p>{item.price}</p>
@@ -71,9 +73,10 @@ export default function setorMasculino() {
                         )
                     })}
                 </section>
-                    <h2>Bermudas</h2>
+                <h2>Bermudas</h2>
                 <section className={styles.cardsMasculina}>
                     {resposta && Object?.values(resposta?.bermudas).map((item) => {
+                        console.log(item, 'kgfhkrtmhk');
                         return (
                             <div className={styles.card}
                                 onClick={() =>

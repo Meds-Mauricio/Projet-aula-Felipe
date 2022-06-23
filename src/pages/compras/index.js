@@ -7,11 +7,9 @@ import axios from 'axios'
 export default function Compras () {
 
     const [resposta, setResposta] = useState([]);
-    const [teste, setTeste] = useState([])
-
    
     const click = () => {
-        // window.location.href = "/cadastro"
+        window.location.href = "/cadastro"
         localStorage.clear(resposta)
     }
     return (
@@ -19,5 +17,4 @@ export default function Compras () {
             <button onClick={()=> click()}>voltar</button>
         </>
     )
-
 }

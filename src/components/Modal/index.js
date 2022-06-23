@@ -1,4 +1,4 @@
-import { FaWhatsappSquare } from 'react-icons/fa';
+// import { FaWhatsappSquare } from 'react-icons/fa';
 import React from "react"
 import styles from './styles.module.css'
 
