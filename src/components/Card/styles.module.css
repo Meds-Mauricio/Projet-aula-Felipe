@@ -1,25 +1,19 @@
-.container {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    align-items: center;
+.imagens  {
+    width: 400px;
+    height: 465px;
+    border-radius: 1rem;
+    box-shadow: rgb(0 0 0 / 20%) 0px 0px 2px 2px;
     margin-top: 30px;
 }
 
-.imagens  {
-    width: 400px;
-    height: 380px;
-    margin-top: 0;
-    border-radius: 1rem;
+.container img {
+    height: 350px;
+    border-radius: 1rem 1rem 0rem 0rem;
 }
-
-
-.title{
-    display: flex;
-    flex-direction: column;
-    padding: 1rem;
-    font-size: 1.5rem;
-    font-weight: bolder;
-    margin-top: 38px;
-    text-align: center;
+.container p {
+    font-weight: bold;
+    font-size: 20px;
+    margin: 0;
+    line-height: 30px;
+    font-style: oblique;
 }

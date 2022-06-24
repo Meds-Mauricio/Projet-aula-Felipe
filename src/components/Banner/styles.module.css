@@ -1,14 +1,16 @@
 
 .container {
-    /* max-width: 1920px; */
-    /* width: 100%; */
     margin: 0 auto;
     padding: 0 0.5rem;
 }
 
 .banner {
-    width: 100%;
-    margin: 0 auto; 
+    /* width: 100%;
+    margin: 0 auto;  */
+    width: 1899px;
+    margin: 0 auto;
+    min-width: min-content;
+    margin-left: -273px;
 }
 
 

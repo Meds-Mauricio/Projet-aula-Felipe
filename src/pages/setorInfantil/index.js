@@ -40,7 +40,9 @@ export default function SetorInfantil() {
                                 <p>{item.name}</p>
                                 <p>{item.price}</p>
                                 <p>{item.size}</p>
+                                <card />
                             </div>
+                            
 
                         )
                     }

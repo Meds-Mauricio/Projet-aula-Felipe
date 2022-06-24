@@ -35,12 +35,10 @@ export default function Home() {
             <section className={styles.cards}>
                 <h1>Roupas Masculinas</h1>
                 <div className={styles.cards_1}>
-                    {/* onClick={() => click(item)}
-                    onChange={(e) => setSeparado(e.target.value)} */}
                     <BoxCardMasculino />
                 </div>
 
-                <h2> Roupas Femininas</h2>
+                <h1> Roupas Femininas</h1>
                 <div className={styles.cards_2}>
                     {/* onClick={() => click1(item)}
                      onChange={(e) => setEscolhido(e.target.value)}> */}

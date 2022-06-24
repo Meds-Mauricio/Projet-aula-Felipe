@@ -35,24 +35,23 @@ export default function setorMasculino() {
                 <h1>Moda masculina</h1>
                 {/* </main> */}
 
-                <div className={styles.roupas}>
-                    <div className='checkbox'>
-                        <input type={"checkbox"} /><label>grande</label>
-                        <input type={"checkbox"} /><label>médio</label>
-                        <input type={"checkbox"} /><label>pequeno</label>
-                    </div>
+                <div className={styles.checkbox}>
+                    <label>Filtrar</label>
+                    <input type={"checkbox"} /><label>Grande</label>
+                    <input type={"checkbox"} /><label>Média</label>
+                    <input type={"checkbox"} /><label>Pequena</label>
                 </div>
                 <h2>Camisetas</h2>
                 <section className={styles.cardsMasculina}>
                     {resposta && Object?.values(resposta?.camisetas).map((item) => {
                         return (
-                            <div className={styles.card}
-                                onClick={() => click(item)}
-                                onChange={(e) => setSelecionado(e.target.value)}>
+                            <div className={styles.card}>
                                 <img src={item.img} />
                                 <p>{item.name}</p>
                                 <p>{item.price}</p>
                                 <p>{item.size}</p>
+                                <button onClick={() => window.location.href = "https://web.whatsapp.com/send?phone=5511982620594"}>Comprar</button>
+
                             </div>
                         )
                     })}

@@ -1,5 +1,3 @@
-
-
 .cabecalho h1 {
     text-align: center;
     color: #222;
@@ -7,18 +5,20 @@
     font-weight: 800;
     text-decoration: none;
     font-size: 34px;
+    margin-top: 30px;
+    margin-bottom: 90px;
 }
 
 .cabecalho h2 {
-    background-image: url('../../../public/bg-titulo.png');
+    background-image: url(/_next/static/media/bg-titulo.3b4a5af8.png);
     padding: 5px 0 10px 10px;
     font-style: oblique;
     font-weight: bold;
     color: #FFF;
-    margin-top: 35px;
     width: 50%;
     background-repeat: no-repeat;
     text-transform: uppercase;
+    margin-top: -47px;
 }
 
 .cardsMasculina {
@@ -45,6 +45,28 @@
     margin-top: 30px;
 }
 
-.card p{
-    text-transform: capitalize;
+.cabecalho  label{
+    margin-right: 10px;
+}
+
+.cabecalho .checkbox {
+    width: 100%;
+    margin-left: 30px;
+    z-index: 100;
+    font-weight: bold;
+    text-align: end;
+}
+
+.card button {
+    position: absolute;
+    border: 0;
+    border-radius: 0.5rem;
+    padding: 0.5rem 0.5rem;
+    color: aliceblue;
+    background-color: #222;
+    cursor: pointer;
+    font-weight: bold;
+    margin: -37px 109px;
+    font-style: oblique;
+
 }
