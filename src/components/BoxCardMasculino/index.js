@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import axios from 'axios';
-import Card from '../Card'
 import style from './styles.module.css';
+import Card from '../Card';
 
 export default function BoxCardMasculino() {
 

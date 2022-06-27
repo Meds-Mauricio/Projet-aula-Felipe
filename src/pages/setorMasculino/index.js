@@ -68,6 +68,7 @@ export default function setorMasculino() {
                                 <p>{item.name}</p>
                                 <p>{item.price}</p>
                                 <p>{item.size}</p>
+                                <button onClick={() => window.location.href = "https://web.whatsapp.com/send?phone=5511982620594"}>Comprar</button>
                             </div>
                         )
                     })}
@@ -85,6 +86,7 @@ export default function setorMasculino() {
                                 <p>{item.name}</p>
                                 <p>{item.price}</p>
                                 <p>{item.size}</p>
+                                <button onClick={() => window.location.href = "https://web.whatsapp.com/send?phone=5511982620594"}>Comprar</button>
                             </div>
                         )
                     })}
