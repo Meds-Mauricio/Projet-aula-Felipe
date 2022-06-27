@@ -3,9 +3,20 @@
     height: 380px;
     margin-top: 0;
     border-radius: 1rem;
-    
+
 }
-.cards h1 { 
+
+.cards h1 {
+    background-image: url(/bg-titulo.png);
     text-align: center;
-    margin-top: 30px;
+    margin-top: 5px;
+    display: flex;
+    padding: 5px 0 10px 10px;
+    font-style: oblique;
+    font-weight: bold;
+    color: #fff;
+    width: 100%;
+    background-repeat: no-repeat;
+    text-transform: uppercase;
+    margin-bottom: -50px;
 }

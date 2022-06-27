@@ -5,29 +5,30 @@
     font-weight: 800;
     text-decoration: none;
     font-size: 34px;
-    margin-top: 30px;
-    margin-bottom: 90px;
+    margin-bottom: 75px;
 }
 
 .cabecalho h2 {
-    background-image: url(/_next/static/media/bg-titulo.3b4a5af8.png);
+    display: flex;
+    background-image: url(/bg-titulo.png);
     padding: 5px 0 10px 10px;
     font-style: oblique;
     font-weight: bold;
-    color: #FFF;
-    width: 50%;
+    color: #fff;
+    width: 100%;
     background-repeat: no-repeat;
     text-transform: uppercase;
-    margin-top: -47px;
+    margin-bottom: -20px;
 }
 
 .cardsMasculina {
-    width: 1379px;
+    width: 1350px;
     margin: 0 auto;
     display: flex;
     font-weight: bolder;
     justify-content: space-between;
     flex-wrap: wrap;
+    margin-bottom: 70px;
 }
 
 .card img {
@@ -45,16 +46,18 @@
     margin-top: 30px;
 }
 
-.cabecalho  label{
+.cabecalho label {
     margin-right: 10px;
 }
 
 .cabecalho .checkbox {
     width: 100%;
-    margin-left: 30px;
-    z-index: 100;
+    margin-left: 9px;
+    z-index: 1000;
     font-weight: bold;
     text-align: end;
+    margin-bottom: -66px;
+
 }
 
 .card button {
@@ -68,5 +71,4 @@
     font-weight: bold;
     margin: -37px 109px;
     font-style: oblique;
-
 }
