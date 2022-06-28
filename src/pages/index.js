@@ -31,7 +31,7 @@ export default function Home() {
             <Head>
                 <title>Na Moda</title>
             </Head>
-            <Banner />
+            {/* <Banner /> */}
             <section className={styles.cards}>
                 <h1>Roupas Masculinas</h1>
                 <div className={styles.cards_1}>

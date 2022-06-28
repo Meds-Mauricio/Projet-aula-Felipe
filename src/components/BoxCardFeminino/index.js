@@ -3,7 +3,7 @@ import axios from 'axios';
 import style from './styles.module.css';
 import Card from '../Card';
 
-export default function setorFeminina() {
+export default function BoxCardFeminino() {
     const [resposta, setResposta] = useState();
     const [selecionado, setSelecionado] = useState([]);
     // const [pequeno, setPequeno] = useState();

@@ -1,23 +1,13 @@
-
 .container {
+    width: 100%;
     margin: 0 auto;
-    padding: 0 0.5rem;
 }
 
 .banner {
-    width: 2385px;
+    width: 100%;
     margin: 0 auto;
     min-width: -webkit-min-content;
     min-width: -moz-min-content;
     min-width: min-content;
-    margin-left: -529px;
+    height: 500px;
 }
-
-
-    /* width: 100%;
-    margin: 0 auto;  */
-    /* width: 1920px;
-    margin: 0 auto;
-    min-width: min-content;
-    margin-left: -273px;
-} */

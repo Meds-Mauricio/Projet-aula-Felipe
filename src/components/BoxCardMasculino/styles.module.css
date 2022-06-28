@@ -9,19 +9,14 @@
     margin-top: 30px;
 }
 
-.imagem {
-    height: 10px;
-}
-
 .cards button {
-    position: absolute;
-    border: 0;
     border-radius: 0.5rem;
-    padding: 0.5rem 0.5rem;
     color: aliceblue;
     background-color: #222;
     cursor: pointer;
     font-weight: bold;
-    margin: -37px 109px;
     font-style: oblique;
+    width: 175px;
+    height: 41px;
+    font-size: 25px;
 }

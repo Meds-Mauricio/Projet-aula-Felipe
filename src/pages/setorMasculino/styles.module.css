@@ -22,7 +22,7 @@
 }
 
 .cardsMasculina {
-    width: 1350px;
+    width: 100%;
     margin: 0 auto;
     display: flex;
     font-weight: bolder;
@@ -43,32 +43,33 @@
     text-align: center;
     box-shadow: rgb(0 0 0 / 20%) 0px 0px 2px 2px;
     border-radius: 0.9rem;
-    margin-top: 30px;
+    margin-top: 40px;
+    padding-bottom: 20px;
 }
 
 .cabecalho label {
-    margin-right: 10px;
+    margin-right: 15px;
 }
 
 .cabecalho .checkbox {
     width: 100%;
     margin-left: 9px;
     z-index: 1000;
-    font-weight: bold;
+    font-weight: 900;
     text-align: end;
     margin-bottom: -66px;
-
+    font-size: 24px;
+    font-style: oblique;
 }
 
 .card button {
-    position: absolute;
-    border: 0;
     border-radius: 0.5rem;
-    padding: 0.5rem 0.5rem;
     color: aliceblue;
     background-color: #222;
     cursor: pointer;
     font-weight: bold;
-    margin: -37px 109px;
     font-style: oblique;
+    width: 175px;
+    height: 41px;
+    font-size: 25px;
 }

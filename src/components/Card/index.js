@@ -5,8 +5,8 @@ export default function Card({ imagem, title, price, size, link }) {
     return (
         <section className={style.container}>
             <div className={style.imagens}>
-                <img src={imagem} />
                 <div className='atributos'>
+                    <img src={imagem} />
                     <p>{title}</p>
                     <p>{price}</p>
                     <p>{size}</p>
