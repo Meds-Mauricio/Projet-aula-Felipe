@@ -20,7 +20,7 @@ export default function CardsFeminina() {
     const click = (produto) => {
         setSelecionado([...selecionado, produto])
         localStorage.setItem('selecionado', JSON.stringify(selecionado))
-        window.location.href = "/compras"
+        window.location.href = "/cadastro"
     }
     return (
         <>
@@ -36,7 +36,7 @@ export default function CardsFeminina() {
                 {/* </main> */}
 
                 <div className={styles.checkbox}>
-                    <label>Filtrar</label>
+                    <label>Filtro</label>
                     <input type={"checkbox"} /><label>Grande</label>
                     <input type={"checkbox"} /><label>Média</label>
                     <input type={"checkbox"} /><label>Pequena</label>
@@ -50,7 +50,7 @@ export default function CardsFeminina() {
                                 <p>{item.name}</p>
                                 <p>{item.price}</p>
                                 <p>{item.size}</p>
-                                <button onClick={() => window.location.href = "https://web.whatsapp.com/send?phone=5511982620594"}>Comprar</button>
+                                <button onClick={() => window.open("https://web.whatsapp.com/send?phone=5511945988406")}>Comprar</button>
 
                             </div>
                         )
@@ -68,7 +68,7 @@ export default function CardsFeminina() {
                                 <p>{item.name}</p>
                                 <p>{item.price}</p>
                                 <p>{item.size}</p>
-                                <button onClick={() => window.location.href = "https://web.whatsapp.com/send?phone=5511982620594"}>Comprar</button>
+                                <button onClick={() => window.open("https://web.whatsapp.com/send?phone=5511982620594")}>Comprar</button>
 
                             </div>
                         )
@@ -87,7 +87,7 @@ export default function CardsFeminina() {
                                 <p>{item.name}</p>
                                 <p>{item.price}</p>
                                 <p>{item.size}</p>
-                                <button onClick={() => window.location.href = "https://web.whatsapp.com/send?phone=5511982620594"}>Comprar</button>
+                                <button onClick={() => window.open("https://web.whatsapp.com/send?phone=5511930234589")}>Comprar</button>
 
                             </div>
                         )

@@ -10,7 +10,7 @@ export default function Card({ imagem, title, price, size, link }) {
                     <p>{title}</p>
                     <p>{price}</p>
                     <p>{size}</p>
-                    <button onClick={() => window.location.href = link}>Comprar</button>
+                    <button onClick={() => window.open(link)}>Comprar</button>
                 </div>
             </div>
         </section>

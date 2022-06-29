@@ -41,6 +41,7 @@
 .card {
     width: 30%;
     text-align: center;
+    font-style: oblique;
     box-shadow: rgb(0 0 0 / 20%) 0px 0px 2px 2px;
     border-radius: 0.9rem;
     margin-top: 40px;
@@ -49,6 +50,8 @@
 
 .cabecalho label {
     margin-right: 15px;
+    font-style: oblique;
+
 }
 
 .cabecalho .checkbox {
@@ -59,7 +62,6 @@
     text-align: end;
     margin-bottom: -66px;
     font-size: 24px;
-    font-style: oblique;
 }
 
 .card button {

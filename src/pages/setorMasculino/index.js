@@ -7,6 +7,7 @@ import axios from 'axios'
 export default function setorMasculino() {
 
 
+
     const [resposta, setResposta] = useState();
     const [selecionado, setSelecionado] = useState([]);
 
@@ -17,11 +18,11 @@ export default function setorMasculino() {
                 setResposta(response?.data);
             })
     }, []);
-    const click = (produto) => {
-        setSelecionado([...selecionado, produto])
-        localStorage.setItem('selecionado', JSON.stringify(selecionado))
-        window.location.href = "/compras"
-    }
+    // const click = (produto) => {
+    //     setSelecionado([...selecionado, produto])
+    //     localStorage.setItem('selecionado', JSON.stringify(selecionado))
+    //     window.location.href = "/cadastro"
+    // }
     return (
         <>
             <Head>
@@ -30,13 +31,13 @@ export default function setorMasculino() {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
             <section className={styles.cabecalho}>
-                {/* <input onchange={(e) => { setCamisa(e.target.value) }} /> */}
-                {/* <main className={styles.main}> */}
+                <input onchange={(e) => { setCamisa(e.target.value) }} />
+                {/* <main className={styles.main}>
                 <h1>Moda masculina</h1>
                 {/* </main> */}
 
                 <div className={styles.checkbox}>
-                    <label>Filtrar</label>
+                    <label>Filtro</label>
                     <input type={"checkbox"} /><label>Grande</label>
                     <input type={"checkbox"} /><label>Média</label>
                     <input type={"checkbox"} /><label>Pequena</label>
@@ -50,7 +51,7 @@ export default function setorMasculino() {
                                 <p>{item.name}</p>
                                 <p>{item.price}</p>
                                 <p>{item.size}</p>
-                                <button onClick={() => window.location.href = "https://web.whatsapp.com/send?phone=5511982620594"}>Comprar</button>
+                                <button onClick={() => window.open("https://web.whatsapp.com/send?phone=5511945988406")}>Comprar</button>
                             </div>
                         )
                     })}
@@ -67,7 +68,7 @@ export default function setorMasculino() {
                                 <p>{item.name}</p>
                                 <p>{item.price}</p>
                                 <p>{item.size}</p>
-                                <button onClick={() => window.location.href = "https://web.whatsapp.com/send?phone=5511982620594"}>Comprar</button>
+                                <button onClick={() => window.open("https://web.whatsapp.com/send?phone=5511982620594")}>Comprar</button>
                             </div>
                         )
                     })}
@@ -75,7 +76,7 @@ export default function setorMasculino() {
                 <h2>Bermudas</h2>
                 <section className={styles.cardsMasculina}>
                     {resposta && Object?.values(resposta?.bermudas).map((item) => {
-                        console.log(item, 'kgfhkrtmhk');
+                        // console.log(item, 'kgfhkrtmhk');
                         return (
                             <div className={styles.card}
                                 onClick={() =>
@@ -85,7 +86,7 @@ export default function setorMasculino() {
                                 <p>{item.name}</p>
                                 <p>{item.price}</p>
                                 <p>{item.size}</p>
-                                <button onClick={() => window.location.href = "https://web.whatsapp.com/send?phone=5511982620594"}>Comprar</button>
+                                <button onClick={() => window.open("https://web.whatsapp.com/send?phone=5511930234589")}>Comprar</button>
                             </div>
                         )
                     })}
