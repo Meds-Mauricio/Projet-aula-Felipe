@@ -5,7 +5,7 @@
     font-weight: 800;
     text-decoration: none;
     font-size: 34px;
-    margin-bottom: 75px;
+    margin-bottom: 55px;
 }
 
 .cabecalho h2 {
@@ -19,6 +19,7 @@
     background-repeat: no-repeat;
     text-transform: uppercase;
     margin-bottom: -20px;
+
 }
 
 .cardsFeminina {
@@ -31,13 +32,6 @@
     margin-bottom: 70px;
 }
 
-.card img {
-    width: 100%;
-    height: 350px;
-    margin-top: -1px;
-    border-radius: 0.9rem 0.9rem 0 0;
-}
-
 .card {
     width: 30%;
     text-align: center;
@@ -47,13 +41,25 @@
     margin-top: 40px;
     padding-bottom: 20px;
 }
+.card img {
+    width: 100%;
+    height: 350px;
+    margin-top: -1px;
+    border-radius: 0.9rem 0.9rem 0 0;
+}
 
 .cabecalho label {
     margin-right: 15px;
     font-style: oblique;
-
 }
 
+.card p {
+    font-weight: bold;
+    font-size: 20px;
+    margin: 0;
+    line-height: 30px;
+    font-style: oblique;
+}
 .cabecalho .checkbox {
     width: 100%;
     margin-left: 9px;
@@ -74,12 +80,4 @@
     width: 175px;
     height: 41px;
     font-size: 25px;
-}
-
-.card p {
-    font-weight: bold;
-    font-size: 20px;
-    margin: 0;
-    line-height: 30px;
-    font-style: oblique;
 }
