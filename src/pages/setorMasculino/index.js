@@ -1,17 +1,13 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from './styles.module.css'
-import react, { useState, useEffect } from 'react'
+import { useState, useEffect } from 'react'
 import axios from 'axios'
 
 export default function setorMasculino() {
-    console.log('ok')
-    const [grande, setGrande] = useState()
-    const [medio, setMedio] = useState('')
-    const [pequeno, setPequeno] = useState('')
-
     const [resposta, setResposta] = useState();
     const [selecionado, setSelecionado] = useState([]);
+    const [size, setSize] = useState('selecione');
 
     useEffect(() => {
         axios.get('https://api-de-roupas-default-rtdb.firebaseio.com/roupas/masculina.json')
@@ -37,8 +33,17 @@ export default function setorMasculino() {
 
     console.log(url, 'url');
 
-    // const teste = () => {            
-    // setMedio(url=== medio)
+    const filter = resposta && Object.values(resposta?.camisetas).filter((items) => {
+        return items?.size === url?.size
+    })
+
+    const filtro = resposta && Object.values(resposta?.calcas).filter((items) => {
+        return items?.size === url?.size
+    })
+
+    const filtrar = resposta && Object.values(resposta?.bermudas).filter((items) => {
+        return items?.size === url?.size
+    })
 
 
     return (
@@ -51,85 +56,108 @@ export default function setorMasculino() {
                 </Head>
                 <section className={styles.cabecalho}>
                     <h1>Moda masculina</h1>
-
-                    <div className={styles.checkbox}>
-                        {/* <label>Filtro</label> */}
-                        <div onClick={() => teste}>
-                            <input type={"checkbox"} value={grande} /><label>Grande</label>
-                        </div>
-
-{
-                         const tamanho = url.filter(resposta, 'Medio') => {setMedio(e.target.value)}
-                            return(
-                         setMedio(url.size === medio)
-
-
-                            )}
-
-
-                        {tamanho.map((url.size, medio) => {
-                             return (
-                        <div onClick={() => window.location.href = `/setorMasculino?size=medio`}>
-                            <input type={"checkbox"} onChange={(e) => setMedio(e.target.value)} /><label>Médio</label>
-                        </div>
-                             )})}
-
-                        <div onClick={() => window.location.href = `/resultado?roupas=pequeno`}>
-                            <input type={"checkbox"} onChange={(e) => setPequeno(e.target.value)} /><label>Pequeno</label>
-                        </div>
+                    <div className={styles.filtro}>
+                        <select onChange={(e) => setSize(e.target.value)}>
+                            <option value='selecione'>Selecione</option>
+                            <option value='Grande'>Grande</option>
+                            <option value='Média'>Médio</option>
+                            <option value='Pequeno'>Pequeno</option>
+                        </select>
+                        <button onClick={() => window.location.href = `/setorMasculino?size=${size}`}>Filtrar</button>
                     </div>
 
-
                     <h2>Camisetas</h2>
-
-                    <section className={styles.cardsMasculina}>
-                        {resposta && Object?.values(resposta?.camisetas).map((item) => {
-                            return (
-                                <div className={styles.card}>
-                                    <img src={item.img} />
-                                    <p>{item.name}</p>
-                                    <p>{item.price}</p>
-                                    <p>{item.size}</p>
-                                    <button onClick={() => window.open("https://web.whatsapp.com/send?phone=5511945988406")}>Comprar</button>
-                                </div>
-                            )
-                        })}
-                    </section>
+                    {filter?.length > 0 ? (
+                        <section className={styles.cardsMasculina}>
+                            {filter.map((item) => {
+                                return (
+                                    <div className={styles.card}>
+                                        <img src={item.img} />
+                                        <p>{item.name}</p>
+                                        <p>{item.price}</p>
+                                        <p>{item.size}</p>
+                                        <button onClick={() => window.open("https://web.whatsapp.com/send?phone=5511945988406")}>Comprar</button>
+                                    </div>
+                                )
+                            })}
+                        </section>
+                    ) : (
+                        <section className={styles.cardsMasculina}>
+                            {!!resposta && Object?.values(resposta?.camisetas).map((item) => {
+                                return (
+                                    <div className={styles.card}>
+                                        <img src={item.img} />
+                                        <p>{item.name}</p>
+                                        <p>{item.price}</p>
+                                        <p>{item.size}</p>
+                                        <button onClick={() => window.open("https://web.whatsapp.com/send?phone=5511945988406")}>Comprar</button>
+                                    </div>
+                                )
+                            })}
+                        </section>
+                    )}
                     <h2>Calças</h2>
-                    <section className={styles.cardsMasculina}>
-                        {resposta && Object?.values(resposta?.calcas).map((item) => {
-                            return (
-                                <div className={styles.card}>
+                    {filter?.length > 0 ? (
+                        <section className={styles.cardsMasculina}>
+                            {filtro.map((item) => {
+                                return (
+                                    <div className={styles.card}>
+                                        <img src={item.img} />
+                                        <p>{item.name}</p>
+                                        <p>{item.price}</p>
+                                        <p>{item.size}</p>
+                                        <button onClick={() => window.open("https://web.whatsapp.com/send?phone=5511945988406")}>Comprar</button>
+                                    </div>
+                                )
+                            })}
+                        </section>
+                    ) : (
+                        <section className={styles.cardsMasculina}>
+                            {resposta && Object?.values(resposta?.calcas).map((item) => {
+                                return (
+                                    <div className={styles.card}>
+                                        <img src={item.img} />
+                                        <p>{item.name}</p>
+                                        <p>{item.price}</p>
+                                        <p>{item.size}</p>
+                                        <button onClick={() => window.open("https://web.whatsapp.com/send?phone=5511945988406")}>Comprar</button>
+                                    </div>
+                                )
+                            })}
+                        </section>
+                    )}
 
-                                    {/* onClick={() => click(item)}
-                                    onChange={(e) => setSelecionado(e.target.value)}> */}
-                                    <img src={item.img} />
-                                    <p>{item.name}</p>
-                                    <p>{item.price}</p>
-                                    <p>{item.size}</p>
-                                    <button onClick={() => window.open("https://web.whatsapp.com/send?phone=5511982620594")}>Comprar</button>
-                                </div>
-                            )
-                        })}
-                    </section>
                     <h2>Bermudas</h2>
-                    <section className={styles.cardsMasculina}>
-                        {resposta && Object?.values(resposta?.bermudas).map((item) => {
-                            // console.log(item, 'kgfhkrtmhk');
-                            return (
-                                <div className={styles.card}
-                                    onClick={() =>
-                                        click(item)}
-                                    onChange={(e) => setSelecionado(e.target.value)}>
-                                    <img src={item.img} />
-                                    <p>{item.name}</p>
-                                    <p>{item.price}</p>
-                                    <p>{item.size}</p>
-                                    <button onClick={() => window.open("https://web.whatsapp.com/send?phone=55 11930234589")}>Comprar</button>
-                                </div>
-                            )
-                        })}
-                    </section>
+                    {filter?.length > 0 ? (
+                        <section className={styles.cardsMasculina}>
+                            {filtrar.map((item) => {
+                                return (
+                                    <div className={styles.card}>
+                                        <img src={item.img} />
+                                        <p>{item.name}</p>
+                                        <p>{item.price}</p>
+                                        <p>{item.size}</p>
+                                        <button onClick={() => window.open("https://web.whatsapp.com/send?phone=5511945988406")}>Comprar</button>
+                                    </div>
+                                )
+                            })}
+                        </section>
+
+                    ) : (
+                        <section className={styles.cardsMasculina}>
+                            {resposta && Object?.values(resposta?.bermudas).map((item) => {
+                                return (
+                                    <div className={styles.card}>
+                                        <img src={item.img} />
+                                        <p>{item.name}</p>
+                                        <p>{item.price}</p>
+                                        <p>{item.size}</p>
+                                        <button onClick={() => window.open("https://web.whatsapp.com/send?phone=5511945988406")}>Comprar</button>
+                                    </div>
+                                )
+                            })}
+                        </section>
+                    )}
                 </section>
             </div>
         </>

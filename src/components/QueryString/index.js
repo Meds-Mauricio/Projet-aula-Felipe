@@ -1,32 +1,28 @@
 import React from 'react'
-import { useState } from 'react'
+import Home from '../home';
+import React, { useState, useEffect } from 'react';
 
-export default function QueryString() {
-    
-    // const [loja, setLoja] = useState('selecione')
-    const [roupas, setRoupas] = useState('selecione')
-    const [tamanho, setTamanho] = useState('selecione')
-
-        return (
-            <section>
-                <select onChange={(e) => setRoupas(e.target.value)}>
-                    <option>Selecione</option>
-                    <option value="calça">Calça</option>
-                    <option value="camiseta">Camiseta</option>
-                    <option value="bermuda">Bermuda</option>
-                </select>
-
-                <select onChange={(e) => setTamanho(e.target.value)}>
-                    <option>Selecione</option>
-                    <option value="pequeno">Pequeno</option>
-                    <option value="medio">Médio</option>
-                    <option value="grande">Grande</option>
-                </select>
-                    <button onClick={(produtos) => window.location.href = `/${roupas}&tamanho=${tamanho}&grande=${grande}`}>Filtrar</button>
-            </section>
-        )
-    }
-    
+export default function querystring() {
 
 
+    const params = new URLSearchParams(window.location.search);
+    let urlParams = undefined;
+    params.forEach((value, key) => {
+        urlParams = Object.assign({}, urlParams, {
+            [key]: value.toString()
+        });
+    });
 
+    return (
+
+        <div className={styles.filtro}>
+            <select onChange={(e) => setSize(e.target.value)}>
+                <option value='selecione'>Selecione</option>
+                <option value='Grande'>Grande</option>
+                <option value='Média'>Médio</option>
+                <option value='Pequeno'>Pequeno</option>
+            </select>
+            <button onClick={() => window.location.href = `/setorMasculino?size=${size}`}>Filtrar</button>
+        </div>
+    )
+}

@@ -60,7 +60,7 @@
     line-height: 30px;
     font-style: oblique;
 }
-.cabecalho .checkbox {
+.cabecalho .filtro {
     width: 100%;
     margin-left: 9px;
     z-index: 1000;
@@ -68,6 +68,31 @@
     text-align: end;
     margin-bottom: -66px;
     font-size: 24px;
+}
+
+ .filtro .option {
+    height: auto;
+}
+
+.filtro select {
+    height: 27px;
+    font-size: 19px;
+    font-weight: bold;
+    cursor: pointer;
+    font-style: oblique;
+    background: #222;
+    color: #fff;
+}
+
+.filtro button {
+    
+    height: 27px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    font-style: oblique;
+    background: #222;
+    color: #fff;
 }
 
 .card button {
