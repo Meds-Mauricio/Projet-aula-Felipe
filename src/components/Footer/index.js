@@ -9,7 +9,7 @@ export default function Footer() {
             <div className={style.rodape} >
                 <div>
                     <h1>Contatos</h1>
-                    <p>loja: (+55) 11 98262-0594</p>
+                    <p>Na Moda: (+55) 11 98262-0594</p>
                     <p>Reclamação: (+55) 11 93023-4589</p>
                 </div>
                 <div className={style.horario}>

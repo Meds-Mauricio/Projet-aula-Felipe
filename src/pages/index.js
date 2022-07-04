@@ -1,9 +1,6 @@
 import Head from 'next/head'
 import styles from '../../styles/Home.module.css'
-import Banner from '../components/Banner'
-// import Footer from '../components/Footer'
-// import Card from '../components/Card'
-import react, { useState } from 'react'
+import { useState } from 'react'
 import BoxCardMasculino from '../components/BoxCardMasculino'
 import BoxCardFeminino from '../components/BoxCardFeminino'
 
@@ -13,7 +10,6 @@ export default function Home() {
     const [resposta, setResposta] = useState();
     const [escolhido, setEscolhido] = useState([]);
     const [separado, setSeparado] = useState([]);
-
 
     const click = (produto) => {
         setResposta([...escolhido, produto])
@@ -31,7 +27,6 @@ export default function Home() {
             <Head>
                 <title>Na Moda</title>
             </Head>
-            {/* <Banner /> */}
             <section className={styles.cards}>
                 <h1>Roupas Masculinas</h1>
                 <div className={styles.cards_1}>

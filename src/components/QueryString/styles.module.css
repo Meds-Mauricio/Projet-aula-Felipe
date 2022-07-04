@@ -1,0 +1,46 @@
+.cabecalho .filtro {
+    width: 100%;
+    z-index: 1000;
+    font-weight: 900;
+    text-align: end;
+    margin-bottom: -66px;
+    font-size: 24px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.filtro select {
+    height: 27px;
+    font-size: 19px;
+    font-weight: bold;
+    cursor: pointer;
+    font-style: oblique;
+    background: #222;
+    color: #fff;
+}
+
+.filtro button {
+    height: 27px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    font-style: oblique;
+    background: #222;
+    color: #fff;
+}
+
+.buttonfiltrar {
+    display: flex;
+    }
+
+.card button {
+    border-radius: 0.5rem;
+    color: aliceblue;
+    background-color: #222;
+    cursor: pointer;
+    font-weight: bold;
+    font-style: oblique;
+    width: 175px;
+    height: 41px;
+    font-size: 25px;
+}

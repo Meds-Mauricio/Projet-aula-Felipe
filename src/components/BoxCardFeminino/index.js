@@ -6,14 +6,10 @@ import Card from '../Card';
 export default function BoxCardFeminino() {
     const [resposta, setResposta] = useState();
     const [selecionado, setSelecionado] = useState([]);
-    // const [pequeno, setPequeno] = useState();
-    // const [medio, setMedio] = useState();
-    // const [grande, setGrande] = useState();
 
     useEffect(() => {
         axios.get('https://api-de-roupas-default-rtdb.firebaseio.com/roupas/femininas.json')
             .then(function (response) {
-                // console.log(response?.data)
                 setResposta(response?.data);
             }
             )

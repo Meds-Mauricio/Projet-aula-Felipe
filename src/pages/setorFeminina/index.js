@@ -29,12 +29,11 @@ export default function CardsFeminina() {
                     [key]: value.toString(),
                 });
             });
-            console.log(urlParams, 'params')
             setUrl(urlParams);
         }
     }, []);
 
-    console.log(url, 'url');
+    // console.log(url, 'url');
 
     const filter = resposta && Object.values(resposta?.camisetas).filter((items) => {
         return items?.size === url?.size
@@ -48,7 +47,6 @@ export default function CardsFeminina() {
         return items?.size === url?.size
     })
 
-    console.log(size, 'hgjgjggj');
 
 
     return (
