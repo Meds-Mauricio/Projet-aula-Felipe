@@ -30,7 +30,6 @@ export default function setorMasculino() {
         }
     }, []);
 
-    // console.log(url, 'url');
 
     const filter = resposta && Object.values(resposta?.camisetas).filter((items) => {
         return items?.size === url?.size
@@ -60,7 +59,7 @@ export default function setorMasculino() {
                             <option value='selecione'>Selecione</option>
                             <option value='Grande'>Grande</option>
                             <option value='Média'>Médio</option>
-                            <option value='Pequeno'>Pequeno</option>
+                            <option value='Pequena'>Pequeno</option>
                         </select>
                         <button onClick={() => window.location.href = `/setorMasculino?size=${size}`}>Filtrar</button>
                     </div>

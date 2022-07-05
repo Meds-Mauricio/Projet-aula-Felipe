@@ -33,7 +33,6 @@ export default function CardsFeminina() {
         }
     }, []);
 
-    // console.log(url, 'url');
 
     const filter = resposta && Object.values(resposta?.camisetas).filter((items) => {
         return items?.size === url?.size
