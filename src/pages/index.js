@@ -35,8 +35,6 @@ export default function Home() {
 
                 <h1> Roupas Femininas</h1>
                 <div className={styles.cards_2}>
-                    onClick={() => click1(item)}
-                     onChange={(e) => setSeparado(e.target.value)}
                     <BoxCardFeminino />
                 </div>
             </section>
